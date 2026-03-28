@@ -1,26 +1,7 @@
 import * as THREE from "three";
+import type { StationData, StationRoute } from "./stationFilter";
 
-interface StationRoute {
-  line_code: string | null;
-  line_name: string | null;
-  operator_code: string | null;
-  operator_name: string | null;
-  station_code: string | null;
-  short_code: string | null;
-}
-
-interface StationData {
-  station_group_code: string;
-  station_name: string;
-  station_name_kana: string | null;
-  station_name_romaji: string | null;
-  prefecture_code: string;
-  center_point: { lat: number; lon: number };
-  elevation_m: number | null;
-  depth_m?: number;
-  station_elevation_m?: number;
-  routes: StationRoute[];
-}
+export type { StationData, StationRoute };
 
 // Tokyo 23 wards bounding box
 const BOUNDS = {
@@ -276,14 +257,56 @@ function buildAndRenderRailLines(
   return railLines;
 }
 
-export async function loadStations(parent: THREE.Object3D): Promise<RailLine[]> {
+// --- Cached data fetching ---
+
+let cachedStations: StationData[] | null = null;
+
+export async function fetchStations(): Promise<StationData[]> {
+  if (cachedStations) return cachedStations;
   const resp = await fetch("/data/tokyo_rail_stations_centerpoints.json");
-  const stations: StationData[] = await resp.json();
+  cachedStations = await resp.json();
+  return cachedStations!;
+}
+
+// --- Re-renderable station rendering ---
+
+const RENDER_GROUP_NAME = "station-render-group";
+
+export function renderStations(
+  stations: StationData[],
+  parent: THREE.Object3D
+): RailLine[] {
+  // Remove previous render group if it exists
+  const existing = parent.getObjectByName(RENDER_GROUP_NAME);
+  if (existing) {
+    parent.remove(existing);
+    existing.traverse((obj) => {
+      if (obj instanceof THREE.Mesh || obj instanceof THREE.InstancedMesh) {
+        obj.geometry.dispose();
+        if (Array.isArray(obj.material)) {
+          obj.material.forEach((m) => m.dispose());
+        } else {
+          obj.material.dispose();
+        }
+      }
+      if (obj instanceof THREE.Line) {
+        obj.geometry.dispose();
+        if (Array.isArray(obj.material)) {
+          obj.material.forEach((m) => m.dispose());
+        } else {
+          obj.material.dispose();
+        }
+      }
+    });
+  }
+
+  const group = new THREE.Group();
+  group.name = RENDER_GROUP_NAME;
+
   const ward23 = stations.filter(isIn23Wards);
 
-  // Group by operator color for instanced rendering
+  // Instanced station dots
   const colorGroups = new Map<number, THREE.Vector3[]>();
-
   for (const st of ward23) {
     const elev = st.station_elevation_m ?? st.elevation_m ?? 0;
     const pos = mapToOri(st.center_point.lat, st.center_point.lon, elev);
@@ -291,23 +314,30 @@ export async function loadStations(parent: THREE.Object3D): Promise<RailLine[]> 
     if (!colorGroups.has(color)) colorGroups.set(color, []);
     colorGroups.get(color)!.push(pos);
   }
-
   const sphereGeo = new THREE.SphereGeometry(0.012, 6, 6);
-
   for (const [color, positions] of colorGroups) {
     const mat = new THREE.MeshBasicMaterial({ color });
     const mesh = new THREE.InstancedMesh(sphereGeo, mat, positions.length);
-
     const dummy = new THREE.Object3D();
     positions.forEach((pos, i) => {
       dummy.position.copy(pos);
       dummy.updateMatrix();
       mesh.setMatrixAt(i, dummy.matrix);
     });
-
-    parent.add(mesh);
+    group.add(mesh);
   }
 
-  // Build and render railway lines, return path data for train animation
-  return buildAndRenderRailLines(ward23, parent);
+  // Railway lines
+  const railLines = buildAndRenderRailLines(ward23, group);
+
+  parent.add(group);
+
+  return railLines;
+}
+
+// --- Legacy entry point ---
+
+export async function loadStations(parent: THREE.Object3D): Promise<RailLine[]> {
+  const stations = await fetchStations();
+  return renderStations(stations, parent);
 }

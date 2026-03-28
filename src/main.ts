@@ -1,7 +1,9 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { FaceTracker } from "./faceTracker";
-import { loadStations } from "./stationRenderer";
+import { fetchStations, renderStations } from "./stationRenderer";
+import { TabSync } from "./tabSync";
+import { classifyLines, filterStations, getCategoriesForTab } from "./stationFilter";
 import { TrainRenderer } from "./trainRenderer";
 import { TimeController, type SpeedMultiplier } from "./timeController";
 import "./style.css";
@@ -67,17 +69,44 @@ const seaLevelLine = new THREE.Line(
 );
 ori.add(seaLevelLine);
 
-// --- Stations + Trains ---
+// --- Tab-aware station rendering ---
 const timeCtrl = new TimeController();
 const trainRenderer = new TrainRenderer();
 let dataLoaded = false;
+const tabInfoEl = document.getElementById("tab-info") as HTMLDivElement;
 
-async function initData() {
-  const railLines = await loadStations(ori);
-  await trainRenderer.load(ori, railLines);
-  dataLoaded = true;
-}
-initData();
+const tabLabels: Record<string, string> = {
+  all: "全路線",
+  "subway,inner": "23区内完結路線",
+  connecting: "接続路線",
+  subway: "地下鉄 (Metro/都営)",
+  inner: "JR・私鉄 (23区内)",
+};
+
+(async () => {
+  const allStations = await fetchStations();
+  const lineClassification = classifyLines(allStations);
+
+  async function updateStations(tabCount: number, tabIndex: number): Promise<void> {
+    const categories = getCategoriesForTab(tabCount, tabIndex);
+    const stations =
+      categories === null
+        ? allStations
+        : filterStations(allStations, lineClassification, categories);
+    const railLines = renderStations(stations, ori);
+    await trainRenderer.load(ori, railLines);
+    dataLoaded = true;
+
+    const categoryKey = categories === null ? "all" : [...categories].sort().join(",");
+    const label = tabLabels[categoryKey] ?? categoryKey;
+    tabInfoEl.textContent = `Tab ${tabIndex + 1}/${tabCount} — ${label}`;
+    document.title = tabCount <= 1 ? "Ori Viewer" : `Ori Viewer — ${label}`;
+  }
+
+  new TabSync((tabCount, tabIndex) => {
+    updateStations(tabCount, tabIndex);
+  });
+})();
 
 // --- UI ---
 const startBtn = document.getElementById("btn-start") as HTMLButtonElement;
@@ -175,6 +204,44 @@ const trainCountEl = document.getElementById("train-count") as HTMLSpanElement;
 
 speedSelect.addEventListener("change", () => {
   timeCtrl.setSpeed(Number(speedSelect.value) as SpeedMultiplier);
+});
+
+// --- Train click tooltip ---
+const tooltipEl = document.getElementById("train-tooltip") as HTMLDivElement;
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+
+canvas.addEventListener("click", (event) => {
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+  raycaster.setFromCamera(mouse, camera);
+  const meshes = trainRenderer.getVisibleMeshes();
+  if (meshes.length === 0) return;
+
+  const intersects = raycaster.intersectObjects(meshes);
+  if (intersects.length > 0) {
+    const info = trainRenderer.getTrainInfoByMesh(intersects[0].object);
+    if (info) {
+      tooltipEl.innerHTML =
+        `<span class="line-name">${info.lineName}</span><br>` +
+        `<span class="terminal">${info.terminal} 方面</span><br>` +
+        `<span class="train-id">${info.trainId}</span>`;
+      tooltipEl.style.left = `${event.clientX + 12}px`;
+      tooltipEl.style.top = `${event.clientY - 10}px`;
+      tooltipEl.classList.add("visible");
+
+      // Auto-hide after 3 seconds
+      setTimeout(() => tooltipEl.classList.remove("visible"), 3000);
+    }
+  } else {
+    tooltipEl.classList.remove("visible");
+  }
+});
+
+// Hide tooltip on camera move
+canvas.addEventListener("mousedown", () => {
+  tooltipEl.classList.remove("visible");
 });
 
 // --- Resize ---

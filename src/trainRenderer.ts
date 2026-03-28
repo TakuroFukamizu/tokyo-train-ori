@@ -10,6 +10,7 @@ interface TimetableStop {
 
 interface TimetableTrain {
   train_id: string;
+  terminal: string;
   stops: TimetableStop[];
 }
 
@@ -21,6 +22,7 @@ interface TimetableDirection {
 
 interface TimetableLine {
   line_code: string;
+  line_name: string;
   directions: TimetableDirection[];
 }
 
@@ -30,23 +32,33 @@ interface TimetableFile {
 
 // --- Internal state ---
 
+export interface TrainInfo {
+  trainId: string;
+  lineName: string;
+  lineCode: string;
+  terminal: string;
+}
+
 interface ActiveTrain {
   trainId: string;
   mesh: THREE.Mesh;
   stops: TimetableStop[];
   posMap: Map<string, THREE.Vector3>;
+  info: TrainInfo;
 }
 
 const TIMETABLE_URLS = [
   "/data/tokyo_metro_timetable.json",
   "/data/toei_timetable.json",
-  "/data/jr_yamanote_timetable.json",
+  "/data/jr_timetable.json",
+  "/data/private_railway_timetable.json",
+  "/data/other_timetable.json",
 ];
 
 const CONE_RADIUS = 0.008;
 const CONE_HEIGHT = 0.025;
 const CONE_SEGMENTS = 6;
-const POOL_SIZE = 500;
+const POOL_SIZE = 800;
 const UP = new THREE.Vector3(0, 1, 0);
 
 export class TrainRenderer {
@@ -57,6 +69,8 @@ export class TrainRenderer {
   private coneGeo: THREE.ConeGeometry;
   private materials = new Map<number, THREE.MeshBasicMaterial>();
   private parent: THREE.Object3D | null = null;
+  private poolInitialized = false;
+  private timetableLoaded = false;
 
   constructor() {
     this.coneGeo = new THREE.ConeGeometry(
@@ -69,30 +83,44 @@ export class TrainRenderer {
   async load(parent: THREE.Object3D, railLines: RailLine[]): Promise<void> {
     this.parent = parent;
 
-    // Index rail lines
+    // Return all active trains to pool
+    for (const [key, train] of this.active) {
+      train.mesh.visible = false;
+      this.freePool.push(train.mesh);
+      this.active.delete(key);
+    }
+
+    // Rebuild line index from scratch
+    this.lineMap.clear();
     for (const rl of railLines) {
       this.lineMap.set(rl.lineCode, rl);
     }
 
-    // Fetch all timetables in parallel
-    const files = await Promise.all(
-      TIMETABLE_URLS.map((url) =>
-        fetch(url).then((r) => r.json() as Promise<TimetableFile>)
-      )
-    );
+    // Fetch timetables only once
+    if (!this.timetableLoaded) {
+      const files = await Promise.all(
+        TIMETABLE_URLS.map((url) =>
+          fetch(url).then((r) => r.json() as Promise<TimetableFile>)
+        )
+      );
 
-    for (const file of files) {
-      for (const line of file.lines) {
-        this.timetableMap.set(line.line_code, line);
+      for (const file of files) {
+        for (const line of file.lines) {
+          this.timetableMap.set(line.line_code, line);
+        }
       }
+      this.timetableLoaded = true;
     }
 
-    // Pre-allocate cone pool
-    for (let i = 0; i < POOL_SIZE; i++) {
-      const mesh = new THREE.Mesh(this.coneGeo);
-      mesh.visible = false;
-      parent.add(mesh);
-      this.freePool.push(mesh);
+    // Pre-allocate cone pool only once
+    if (!this.poolInitialized) {
+      for (let i = 0; i < POOL_SIZE; i++) {
+        const mesh = new THREE.Mesh(this.coneGeo);
+        mesh.visible = false;
+        parent.add(mesh);
+        this.freePool.push(mesh);
+      }
+      this.poolInitialized = true;
     }
   }
 
@@ -123,7 +151,7 @@ export class TrainRenderer {
           const key = `${lineCode}:${train.train_id}`;
 
           if (!this.active.has(key)) {
-            this.spawnTrain(key, train, railLine);
+            this.spawnTrain(key, train, railLine, ttLine.line_name);
           }
 
           const active = this.active.get(key);
@@ -138,7 +166,8 @@ export class TrainRenderer {
   private spawnTrain(
     key: string,
     train: TimetableTrain,
-    railLine: RailLine
+    railLine: RailLine,
+    lineName: string
   ): void {
     if (this.freePool.length === 0) return; // pool exhausted
 
@@ -174,6 +203,12 @@ export class TrainRenderer {
       mesh,
       stops: validStops,
       posMap,
+      info: {
+        trainId: train.train_id,
+        lineName,
+        lineCode: railLine.lineCode,
+        terminal: train.terminal,
+      },
     });
   }
 
@@ -236,6 +271,23 @@ export class TrainRenderer {
   /** Return count of currently visible trains (for debug display) */
   get activeCount(): number {
     return this.active.size;
+  }
+
+  /** Look up train info by mesh (for click/hover detection) */
+  getTrainInfoByMesh(mesh: THREE.Object3D): TrainInfo | null {
+    for (const train of this.active.values()) {
+      if (train.mesh === mesh) return train.info;
+    }
+    return null;
+  }
+
+  /** Get all visible train meshes for raycasting */
+  getVisibleMeshes(): THREE.Mesh[] {
+    const meshes: THREE.Mesh[] = [];
+    for (const train of this.active.values()) {
+      if (train.mesh.visible) meshes.push(train.mesh);
+    }
+    return meshes;
   }
 
   dispose(): void {
