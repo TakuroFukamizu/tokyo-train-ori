@@ -604,7 +604,8 @@
           <h3>列車シミュレーション</h3>
           <p>
             実際の時刻表データに基づき、各路線の列車がリアルタイムで走行。
-            シミュレーション速度は1x〜10xで調整でき、ラッシュ時の密度も体感できます。
+            シミュレーション速度は10x〜100xで調整でき、ラッシュ時の密度も体感できます。
+            列車をクリックすると、路線名・行先・列車IDを確認できます。
           </p>
         </div>
 
@@ -626,6 +627,24 @@
           <p>
             カメラで顔の動きを検知し、頭を傾けるとビューが追従。
             マウスやタッチに触れずに、身体の動きで都市を覗き込む体験。
+          </p>
+        </div>
+
+        <!-- Delay Simulation -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="0.8">
+              <circle cx="20" cy="20" r="14" opacity="0.3" />
+              <line x1="20" y1="10" x2="20" y2="20" stroke="var(--accent)" stroke-width="1" />
+              <line x1="20" y1="20" x2="28" y2="24" stroke="var(--accent)" stroke-width="1" opacity="0.6" />
+              <circle cx="20" cy="20" r="1.5" fill="#ff4400" stroke="none" />
+              <path d="M10 30 Q15 26 20 30 Q25 34 30 30" stroke="#ff4400" stroke-width="0.8" fill="none" opacity="0.6" />
+            </svg>
+          </div>
+          <h3>遅延シミュレーション</h3>
+          <p>
+            路線をクリックして遅延を発生させると、乗換駅を通じて接続路線へ連鎖的に波及。
+            遅延中の列車は振動・拡大し、オレンジ色のパーティクルが路線上を流れます。
           </p>
         </div>
 

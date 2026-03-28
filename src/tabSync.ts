@@ -1,10 +1,13 @@
 type TabChangeCallback = (tabCount: number, tabIndex: number) => void;
 type SpeedChangeCallback = (speed: number) => void;
+type DelayChangeCallback = (lineCode: string, simTimeSec: number) => void;
 
 interface TabMessage {
-  type: "join" | "announce" | "heartbeat" | "leave" | "speed";
+  type: "join" | "announce" | "heartbeat" | "leave" | "speed" | "delay";
   id: string;
   speed?: number;
+  lineCode?: string;
+  simTimeSec?: number;
 }
 
 const CHANNEL_NAME = "ori-tab-sync";
@@ -19,12 +22,18 @@ export class TabSync {
   private cleanupTimer: number | null = null;
   private onChange: TabChangeCallback;
   private onSpeedChange: SpeedChangeCallback | null = null;
+  private onDelayChange: DelayChangeCallback | null = null;
   private lastTabCount = -1;
   private lastTabIndex = -1;
 
-  constructor(onChange: TabChangeCallback, onSpeedChange?: SpeedChangeCallback) {
+  constructor(
+    onChange: TabChangeCallback,
+    onSpeedChange?: SpeedChangeCallback,
+    onDelayChange?: DelayChangeCallback
+  ) {
     this.onChange = onChange;
     this.onSpeedChange = onSpeedChange ?? null;
+    this.onDelayChange = onDelayChange ?? null;
     this.channel = new BroadcastChannel(CHANNEL_NAME);
     this.channel.onmessage = (e: MessageEvent<TabMessage>) =>
       this.handleMessage(e.data);
@@ -74,6 +83,11 @@ export class TabSync {
           this.onSpeedChange(msg.speed);
         }
         break;
+      case "delay":
+        if (msg.lineCode != null && msg.simTimeSec != null && this.onDelayChange) {
+          this.onDelayChange(msg.lineCode, msg.simTimeSec);
+        }
+        break;
     }
   }
 
@@ -107,6 +121,10 @@ export class TabSync {
 
   broadcastSpeed(speed: number): void {
     this.channel.postMessage({ type: "speed", id: this.id, speed });
+  }
+
+  broadcastDelay(lineCode: string, simTimeSec: number): void {
+    this.channel.postMessage({ type: "delay", id: this.id, lineCode, simTimeSec });
   }
 
   destroy(): void {

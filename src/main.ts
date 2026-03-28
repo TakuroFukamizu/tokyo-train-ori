@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { FaceTracker } from "./faceTracker";
-import { fetchStations, renderStations, computeOriYRange, LINE_NAMES, LINE_COLORS, type RailLine } from "./stationRenderer";
+import { fetchStations, renderStations, computeOriYRange, LINE_NAMES, type RailLine } from "./stationRenderer";
 import { TabSync } from "./tabSync";
 import { classifyLines, filterStations, getCategoriesForTab } from "./stationFilter";
 import { TrainRenderer } from "./trainRenderer";
@@ -135,6 +135,9 @@ const tabLabels: Record<string, string> = {
     (speed) => {
       timeCtrl.setSpeed(speed as SpeedMultiplier);
       speedSelect.value = String(speed);
+    },
+    (lineCode, simTimeSec) => {
+      delayManager.triggerDelay(lineCode, simTimeSec);
     }
   );
 })();
@@ -322,6 +325,7 @@ function buildDelayPanel(railLines: RailLine[]): void {
 
     btn.addEventListener("click", () => {
       delayManager.triggerDelay(rl.lineCode, timeCtrl.currentTime);
+      tabSync?.broadcastDelay(rl.lineCode, timeCtrl.currentTime);
     });
 
     delayPanelList.appendChild(btn);
