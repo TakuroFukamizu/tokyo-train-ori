@@ -1,8 +1,10 @@
 type TabChangeCallback = (tabCount: number, tabIndex: number) => void;
+type SpeedChangeCallback = (speed: number) => void;
 
 interface TabMessage {
-  type: "join" | "announce" | "heartbeat" | "leave";
+  type: "join" | "announce" | "heartbeat" | "leave" | "speed";
   id: string;
+  speed?: number;
 }
 
 const CHANNEL_NAME = "ori-tab-sync";
@@ -16,11 +18,13 @@ export class TabSync {
   private heartbeatTimer: number | null = null;
   private cleanupTimer: number | null = null;
   private onChange: TabChangeCallback;
+  private onSpeedChange: SpeedChangeCallback | null = null;
   private lastTabCount = -1;
   private lastTabIndex = -1;
 
-  constructor(onChange: TabChangeCallback) {
+  constructor(onChange: TabChangeCallback, onSpeedChange?: SpeedChangeCallback) {
     this.onChange = onChange;
+    this.onSpeedChange = onSpeedChange ?? null;
     this.channel = new BroadcastChannel(CHANNEL_NAME);
     this.channel.onmessage = (e: MessageEvent<TabMessage>) =>
       this.handleMessage(e.data);
@@ -65,6 +69,11 @@ export class TabSync {
         this.peers.delete(msg.id);
         this.notifyIfChanged();
         break;
+      case "speed":
+        if (msg.speed != null && this.onSpeedChange) {
+          this.onSpeedChange(msg.speed);
+        }
+        break;
     }
   }
 
@@ -95,6 +104,10 @@ export class TabSync {
   private handleUnload = (): void => {
     this.channel.postMessage({ type: "leave", id: this.id });
   };
+
+  broadcastSpeed(speed: number): void {
+    this.channel.postMessage({ type: "speed", id: this.id, speed });
+  }
 
   destroy(): void {
     window.removeEventListener("beforeunload", this.handleUnload);

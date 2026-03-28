@@ -1,8 +1,8 @@
-export type SpeedMultiplier = 1 | 2 | 5 | 10;
+export type SpeedMultiplier = 10 | 20 | 50 | 100;
 
 export class TimeController {
   private simTimeSec: number;
-  private speed: SpeedMultiplier = 1;
+  private speed: SpeedMultiplier = 10;
   private lastMs = performance.now();
 
   constructor() {
