@@ -4,3 +4,12 @@ dist
 
 .DS_Store
 *.sw?
+
+# Tool / IDE config
+.playwright-mcp/
+
+# Superpowers plans
+docs/superpowers/
+
+# Dev screenshots
+screenshot-*.png
