@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "skills": {
+    "mediapipe-camera-input": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "cf379b5c8cea47ae9591cf5039805fbcd663bc0805e93736fe9bd0e46715ce56"
+    },
+    "mediapipe-face-mesh": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "027629994065107097f6bc0e133b24c132cd77b6e0df8b038f4692289a557296"
+    },
+    "mediapipe-hand-tracking": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "94873e67e2a580fddd173a75f4559de368d3a37e511e247baa1487cd7841cc74"
+    },
+    "mediapipe-pose-estimation": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "1ab8ebeb19cdd8b79ff49cfa902d7a0e98bad2806d3b5250890a06bfb4095983"
+    },
+    "mediapipe-wasm-init": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "693101d13cc8b7da83b15f15b6551407d6d4f3054747639ecf9fc7d240e14f39"
+    },
+    "mediapipe-wasm-setup": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "466ad757db1f7ba086c59676ac00ede41384556223d98420ad14081faf6a2173"
+    },
+    "mujoco-mjcf-reference": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "4b0ca5ee2b9d698038a9ea3ed0bb990276d6a7f4f5f99f2e311ddd7f4dc11fac"
+    },
+    "mujoco-model-loading": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "c99f7c6cee09f942c4be013fdb9fc03dfe36ce99efcdb0b723791defd0460c00"
+    },
+    "mujoco-simulation-loop": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "34e6dcc34e93a6b345a9ac13cc603b0174173936788b269cbf3c6d339582c0d6"
+    },
+    "mujoco-threejs-integration": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "4f5b4d6267f2fcf279390feac09c96de8de92d8ef4be8dd692c470e7ea07f7d2"
+    },
+    "mujoco-wasm-init": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "ce75ce425614f50a25c813697b7c86c2c4c52997f493a01d7cbfbeefa220c0e8"
+    },
+    "mujoco-wasm-setup": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "c3770e5a4a04f02d04fd9cb931179c40db2354c85de10444a6cf965d5fbff95d"
+    },
+    "wasm-nextjs-patterns": {
+      "source": "derushio/wasm-skills",
+      "sourceType": "github",
+      "computedHash": "385bd8d622138b415466a128f73ba1ee017455385475fdf1e631cee12283baac"
+    }
+  }
+}
