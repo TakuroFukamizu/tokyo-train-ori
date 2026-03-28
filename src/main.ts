@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { FaceTracker } from "./faceTracker";
-import { fetchStations, renderStations } from "./stationRenderer";
+import { fetchStations, renderStations, computeOriYRange } from "./stationRenderer";
 import { TabSync } from "./tabSync";
 import { classifyLines, filterStations, getCategoriesForTab } from "./stationFilter";
 import { TrainRenderer } from "./trainRenderer";
@@ -9,13 +9,25 @@ import { TimeController, type SpeedMultiplier } from "./timeController";
 import { WindowShakeDetector } from "./windowShakeDetector";
 import "./style.css";
 
+// --- Ori Y sizing (computed before camera setup so LOOK_AT can be set correctly) ---
+const { yMin: oriYMin, yMax: oriYMax } = computeOriYRange();
+const ORI_MARGIN = 0.12; // 12% margin above/below content
+const oriContentHeight = oriYMax - oriYMin;
+const oriHeight = oriContentHeight * (1 + ORI_MARGIN);
+const oriCenterY = (oriYMin + oriYMax) / 2; // center of content in local coords (= ori local space)
+// ori.position.y is chosen so that the cube's geometric center (local y=0) sits at world y = -oriCenterY + oriHeight/2
+// This makes the cube's top/bottom faces equidistant from the content's y extremes
+const ORI_POS_Y = -oriCenterY + oriHeight / 2;
+// world-space Y of ori's geometric center = ori.position.y (since local center is at y=0)
+const ORI_WORLD_CENTER_Y = ORI_POS_Y;
+
 // --- Sensitivity / smoothing (tweak these) ---
 const SENSITIVITY_ROTATION = 2.0; // how much head angle affects camera
 const SENSITIVITY_POSITION = 0.15; // how much head translation affects camera (radians per cm)
 const SMOOTHING = 0.15; // lerp factor (0 = no change, 1 = instant)
 const INITIAL_POSITION = new THREE.Vector3(3, 3, 3);
 const CAMERA_RADIUS = INITIAL_POSITION.length();
-const LOOK_AT = new THREE.Vector3(0, 1, 0); // center of ori
+const LOOK_AT = new THREE.Vector3(0, ORI_WORLD_CENTER_Y, 0); // center of ori
 
 // --- Renderer ---
 const canvas = document.getElementById("canvas") as HTMLCanvasElement;
@@ -47,11 +59,13 @@ const grid = new THREE.GridHelper(10, 10, 0x444444, 0x333333);
 scene.add(grid);
 
 // --- Ori (wireframe cube) ---
-const oriGeometry = new THREE.BoxGeometry(2, 2, 2);
+// oriHeight and oriCenterY are computed at the top of the file (before camera setup)
+const oriGeometry = new THREE.BoxGeometry(2, oriHeight, 2);
 const oriEdges = new THREE.EdgesGeometry(oriGeometry);
 const oriMaterial = new THREE.LineBasicMaterial({ color: 0x00ffaa });
 const ori = new THREE.LineSegments(oriEdges, oriMaterial);
-ori.position.y = 1;
+// ORI_POS_Y centers the cube symmetrically around the content's elevation range
+ori.position.y = ORI_POS_Y;
 scene.add(ori);
 
 // --- Sea level (0m) marker inside ori ---
