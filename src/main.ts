@@ -49,6 +49,22 @@ const ori = new THREE.LineSegments(oriEdges, oriMaterial);
 ori.position.y = 1;
 scene.add(ori);
 
+// --- Sea level (0m) marker inside ori ---
+// elev=0 → y = (0 * EXAGGERATION / MAX_H) * 2 = 0
+const seaLevelY = 0;
+const seaLevelGeo = new THREE.BufferGeometry().setFromPoints([
+  new THREE.Vector3(-1, seaLevelY, -1),
+  new THREE.Vector3(1, seaLevelY, -1),
+  new THREE.Vector3(1, seaLevelY, 1),
+  new THREE.Vector3(-1, seaLevelY, 1),
+  new THREE.Vector3(-1, seaLevelY, -1),
+]);
+const seaLevelLine = new THREE.Line(
+  seaLevelGeo,
+  new THREE.LineBasicMaterial({ color: 0x4488ff, opacity: 0.6, transparent: true })
+);
+ori.add(seaLevelLine);
+
 // --- Stations (rendered inside ori) ---
 loadStations(ori);
 

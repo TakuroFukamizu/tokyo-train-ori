@@ -91,7 +91,9 @@
         "station_code": "JR-East.SobuRapid.Tokyo",
         "short_code": "JO19"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": -1.0
   },
   {
     "station_group_code": "1130102",
@@ -161,7 +163,9 @@
         "station_code": "JR-East.Yokosuka.Shimbashi",
         "short_code": "JO18"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": 0.0
   },
   {
     "station_group_code": "1130103",
@@ -223,7 +227,9 @@
         "station_code": "JR-East.Yokosuka.Shinagawa",
         "short_code": "JO17"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 10.0
   },
   {
     "station_group_code": "1130201",
@@ -269,7 +275,9 @@
         "station_code": "JR-East.ShonanShinjuku.Osaki",
         "short_code": "JS17"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 13.0
   },
   {
     "station_group_code": "1130202",
@@ -307,7 +315,9 @@
         "station_code": "JR-East.Yamanote.Gotanda",
         "short_code": "JY23"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": -6.0
   },
   {
     "station_group_code": "1130203",
@@ -353,7 +363,9 @@
         "station_code": "JR-East.Yamanote.Meguro",
         "short_code": "JY22"
       }
-    ]
+    ],
+    "depth_m": 22.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "1130204",
@@ -399,7 +411,9 @@
         "station_code": "JR-East.ShonanShinjuku.Ebisu",
         "short_code": "JS18"
       }
-    ]
+    ],
+    "depth_m": 15.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "1130205",
@@ -477,7 +491,9 @@
         "station_code": "JR-East.ShonanShinjuku.Shibuya",
         "short_code": "JS19"
       }
-    ]
+    ],
+    "depth_m": 25.0,
+    "station_elevation_m": -2.0
   },
   {
     "station_group_code": "1130206",
@@ -515,7 +531,9 @@
         "station_code": "JR-East.Yamanote.Harajuku",
         "short_code": "JY19"
       }
-    ]
+    ],
+    "depth_m": 22.0,
+    "station_elevation_m": 17.0
   },
   {
     "station_group_code": "1130207",
@@ -553,7 +571,9 @@
         "station_code": "JR-East.Yamanote.Yoyogi",
         "short_code": "JY18"
       }
-    ]
+    ],
+    "depth_m": 40,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "1130208",
@@ -671,7 +691,9 @@
         "station_code": "JR-East.ShonanShinjuku.Shinjuku",
         "short_code": "JS20"
       }
-    ]
+    ],
+    "depth_m": 36.4,
+    "station_elevation_m": 26.6
   },
   {
     "station_group_code": "1130209",
@@ -693,7 +715,9 @@
         "station_code": "JR-East.Yamanote.ShinOkubo",
         "short_code": "JY16"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 39.0
   },
   {
     "station_group_code": "1130210",
@@ -731,7 +755,9 @@
         "station_code": "Seibu.Shinjuku.Takadanobaba",
         "short_code": "SS02"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": 12.0
   },
   {
     "station_group_code": "1130211",
@@ -753,7 +779,9 @@
         "station_code": "JR-East.Yamanote.Mejiro",
         "short_code": "JY14"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 35.0
   },
   {
     "station_group_code": "1130212",
@@ -839,7 +867,9 @@
         "station_code": "Seibu.Ikebukuro.Ikebukuro",
         "short_code": "SI01"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": 33.0
   },
   {
     "station_group_code": "1130213",
@@ -869,7 +899,9 @@
         "station_code": "JR-East.Yamanote.Otsuka",
         "short_code": "JY12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 26.0
   },
   {
     "station_group_code": "1130214",
@@ -899,7 +931,9 @@
         "station_code": "JR-East.Yamanote.Sugamo",
         "short_code": "JY11"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": 16.0
   },
   {
     "station_group_code": "1130215",
@@ -929,7 +963,9 @@
         "station_code": "JR-East.Yamanote.Komagome",
         "short_code": "JY10"
       }
-    ]
+    ],
+    "depth_m": 30,
+    "station_elevation_m": -2.0
   },
   {
     "station_group_code": "1130216",
@@ -959,7 +995,9 @@
         "station_code": "JR-East.Yamanote.Tabata",
         "short_code": "JY09"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 15.0
   },
   {
     "station_group_code": "1130217",
@@ -1005,7 +1043,9 @@
         "station_code": "JR-East.Yamanote.NishiNippori",
         "short_code": "JY08"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": 2.0
   },
   {
     "station_group_code": "1130218",
@@ -1067,7 +1107,9 @@
         "station_code": "JR-East.Yamanote.Nippori",
         "short_code": "JY07"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 19.0
   },
   {
     "station_group_code": "1130219",
@@ -1097,7 +1139,9 @@
         "station_code": "JR-East.Yamanote.Uguisudani",
         "short_code": "JY06"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 16.0
   },
   {
     "station_group_code": "1130220",
@@ -1175,7 +1219,9 @@
         "station_code": "JR-East.Takasaki.Ueno",
         "short_code": "JU02"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "1130221",
@@ -1229,7 +1275,9 @@
         "station_code": "JR-East.Yamanote.Okachimachi",
         "short_code": "JY04"
       }
-    ]
+    ],
+    "depth_m": 40,
+    "station_elevation_m": -28.0
   },
   {
     "station_group_code": "1130222",
@@ -1283,7 +1331,9 @@
         "station_code": "JR-East.Yamanote.Akihabara",
         "short_code": "JY03"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": -4.0
   },
   {
     "station_group_code": "1130223",
@@ -1329,7 +1379,9 @@
         "station_code": "JR-East.Yamanote.Kanda",
         "short_code": "JY02"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "1130225",
@@ -1367,7 +1419,9 @@
         "station_code": "JR-East.Yamanote.Yurakucho",
         "short_code": "JY30"
       }
-    ]
+    ],
+    "depth_m": 22.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "1130227",
@@ -1405,7 +1459,9 @@
         "station_code": "JR-East.Yamanote.Hamamatsucho",
         "short_code": "JY28"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 23.0
   },
   {
     "station_group_code": "1130228",
@@ -1435,7 +1491,9 @@
         "station_code": "JR-East.Yamanote.Tamachi",
         "short_code": "JY27"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 14.0
   },
   {
     "station_group_code": "1130317",
@@ -1457,7 +1515,9 @@
         "station_code": "JR-East.Nambu.Yanokuchi",
         "short_code": "JN17"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 35.0
   },
   {
     "station_group_code": "1130318",
@@ -1479,7 +1539,9 @@
         "station_code": "JR-East.Nambu.Inaginaganuma",
         "short_code": "JN18"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 40.0
   },
   {
     "station_group_code": "1130319",
@@ -1501,7 +1563,9 @@
         "station_code": "JR-East.Nambu.MinamiTama",
         "short_code": "JN19"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 44.0
   },
   {
     "station_group_code": "1130320",
@@ -1531,7 +1595,9 @@
         "station_code": "JR-East.Musashino.Fuchuhommachi",
         "short_code": "JM35"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 51.0
   },
   {
     "station_group_code": "1130321",
@@ -1561,7 +1627,9 @@
         "station_code": "JR-East.Nambu.Bubaigawara",
         "short_code": "JN21"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 60.0
   },
   {
     "station_group_code": "1130322",
@@ -1583,7 +1651,9 @@
         "station_code": "JR-East.Nambu.Yaho",
         "short_code": "JN23"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 73.0
   },
   {
     "station_group_code": "1130323",
@@ -1605,7 +1675,9 @@
         "station_code": "JR-East.Nambu.Yagawa",
         "short_code": "JN24"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 76.0
   },
   {
     "station_group_code": "1130324",
@@ -1627,7 +1699,9 @@
         "station_code": "JR-East.Nambu.NishiKunitachi",
         "short_code": "JN25"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 85.0
   },
   {
     "station_group_code": "1130325",
@@ -1681,7 +1755,9 @@
         "station_code": "JR-East.Ome.Tachikawa",
         "short_code": "JC19"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 94.0
   },
   {
     "station_group_code": "1130329",
@@ -1703,7 +1779,9 @@
         "station_code": "JR-East.Nambu.Nishifu",
         "short_code": "JN22"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 64.0
   },
   {
     "station_group_code": "1130502",
@@ -1725,7 +1803,9 @@
         "station_code": "JR-East.Musashino.KitaFuchu",
         "short_code": "JM34"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 63.0
   },
   {
     "station_group_code": "1130503",
@@ -1755,7 +1835,9 @@
         "station_code": "JR-East.Musashino.NishiKokubunji",
         "short_code": "JM33"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 82.0
   },
   {
     "station_group_code": "1130504",
@@ -1777,7 +1859,9 @@
         "station_code": "JR-East.Musashino.ShinKodaira",
         "short_code": "JM32"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 78.0
   },
   {
     "station_group_code": "1130505",
@@ -1799,7 +1883,9 @@
         "station_code": "JR-East.Musashino.ShinAkitsu",
         "short_code": "JM31"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 58.0
   },
   {
     "station_group_code": "1130610",
@@ -1821,7 +1907,9 @@
         "station_code": "JR-East.Yokohama.Naruse",
         "short_code": "JH22"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 67.0
   },
   {
     "station_group_code": "1130611",
@@ -1851,7 +1939,9 @@
         "station_code": "JR-East.Yokohama.Machida",
         "short_code": "JH23"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 94.0
   },
   {
     "station_group_code": "1130617",
@@ -1873,7 +1963,9 @@
         "station_code": "JR-East.Yokohama.Aihara",
         "short_code": "JH29"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 142.0
   },
   {
     "station_group_code": "1130618",
@@ -1895,7 +1987,9 @@
         "station_code": "JR-East.Yokohama.Hachiojiminamino",
         "short_code": "JH30"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 135.0
   },
   {
     "station_group_code": "1130619",
@@ -1917,7 +2011,9 @@
         "station_code": "JR-East.Yokohama.Katakura",
         "short_code": "JH31"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 108.0
   },
   {
     "station_group_code": "1130620",
@@ -1971,7 +2067,9 @@
         "station_code": "JR-East.Yokohama.Hachioji",
         "short_code": "JH32"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 115.0
   },
   {
     "station_group_code": "1130804",
@@ -2001,7 +2099,9 @@
         "station_code": "JR-East.ShonanShinjuku.NishiOi",
         "short_code": "JS16"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 21.0
   },
   {
     "station_group_code": "1131102",
@@ -2055,7 +2155,9 @@
         "station_code": "JR-East.ChuoRapid.Yotsuya",
         "short_code": "JC04"
       }
-    ]
+    ],
+    "depth_m": 30.0,
+    "station_elevation_m": 2.0
   },
   {
     "station_group_code": "1131104",
@@ -2109,7 +2211,9 @@
         "station_code": "JR-East.ChuoRapid.Kichijoji",
         "short_code": "JC11"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 63.0
   },
   {
     "station_group_code": "1131105",
@@ -2155,7 +2259,9 @@
         "station_code": "JR-East.ChuoRapid.Mitaka",
         "short_code": "JC12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 66.0
   },
   {
     "station_group_code": "1131106",
@@ -2209,7 +2315,9 @@
         "station_code": "Seibu.Tamako.Kokubunji",
         "short_code": "ST01"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 78.0
   },
   {
     "station_group_code": "1131108",
@@ -2239,7 +2347,9 @@
         "station_code": "JR-East.ChuoRapid.Hino",
         "short_code": "JC20"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 81.0
   },
   {
     "station_group_code": "1131109",
@@ -2269,7 +2379,9 @@
         "station_code": "JR-East.ChuoRapid.Toyoda",
         "short_code": "JC21"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 111.0
   },
   {
     "station_group_code": "1131111",
@@ -2299,7 +2411,9 @@
         "station_code": "JR-East.ChuoRapid.NishiHachioji",
         "short_code": "JC23"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 138.0
   },
   {
     "station_group_code": "1131112",
@@ -2345,7 +2459,9 @@
         "station_code": "JR-East.ChuoRapid.Takao",
         "short_code": "JC24"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 172.0
   },
   {
     "station_group_code": "1131203",
@@ -2391,7 +2507,9 @@
         "station_code": "JR-East.ChuoRapid.Ochanomizu",
         "short_code": "JC03"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "1131214",
@@ -2429,7 +2547,9 @@
         "station_code": "JR-East.ChuoRapid.Nakano",
         "short_code": "JC06"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": 33.0
   },
   {
     "station_group_code": "1131215",
@@ -2459,7 +2579,9 @@
         "station_code": "JR-East.ChuoRapid.Koenji",
         "short_code": "JC07"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 49.0
   },
   {
     "station_group_code": "1131216",
@@ -2489,7 +2611,9 @@
         "station_code": "JR-East.ChuoRapid.Asagaya",
         "short_code": "JC08"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 49.0
   },
   {
     "station_group_code": "1131217",
@@ -2527,7 +2651,9 @@
         "station_code": "JR-East.ChuoRapid.Ogikubo",
         "short_code": "JC09"
       }
-    ]
+    ],
+    "depth_m": 8.0,
+    "station_elevation_m": 65.0
   },
   {
     "station_group_code": "1131218",
@@ -2557,7 +2683,9 @@
         "station_code": "JR-East.ChuoRapid.NishiOgikubo",
         "short_code": "JC10"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 59.0
   },
   {
     "station_group_code": "1131221",
@@ -2587,7 +2715,9 @@
         "station_code": "Seibu.Tamagawa.MusashiSakai",
         "short_code": "SW01"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 66.0
   },
   {
     "station_group_code": "1131222",
@@ -2609,7 +2739,9 @@
         "station_code": "JR-East.ChuoRapid.HigashiKoganei",
         "short_code": "JC14"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 70.0
   },
   {
     "station_group_code": "1131223",
@@ -2631,7 +2763,9 @@
         "station_code": "JR-East.ChuoRapid.MusashiKoganei",
         "short_code": "JC15"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 76.0
   },
   {
     "station_group_code": "1131226",
@@ -2653,7 +2787,9 @@
         "station_code": "JR-East.ChuoRapid.Kunitachi",
         "short_code": "JC18"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 79.0
   },
   {
     "station_group_code": "1131308",
@@ -2683,7 +2819,9 @@
         "station_code": "JR-East.ChuoSobuLocal.HigashiNakano",
         "short_code": "JB08"
       }
-    ]
+    ],
+    "depth_m": 40,
+    "station_elevation_m": -1.0
   },
   {
     "station_group_code": "1131309",
@@ -2705,7 +2843,9 @@
         "station_code": "JR-East.ChuoSobuLocal.Okubo",
         "short_code": "JB09"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 38.0
   },
   {
     "station_group_code": "1131312",
@@ -2727,7 +2867,9 @@
         "station_code": "JR-East.ChuoSobuLocal.Sendagaya",
         "short_code": "JB12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 37.0
   },
   {
     "station_group_code": "1131313",
@@ -2749,7 +2891,9 @@
         "station_code": "JR-East.ChuoSobuLocal.Shinanomachi",
         "short_code": "JB13"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 36.0
   },
   {
     "station_group_code": "1131315",
@@ -2795,7 +2939,9 @@
         "station_code": "JR-East.ChuoSobuLocal.Ichigaya",
         "short_code": "JB15"
       }
-    ]
+    ],
+    "depth_m": 31.0,
+    "station_elevation_m": -17.0
   },
   {
     "station_group_code": "1131316",
@@ -2849,7 +2995,9 @@
         "station_code": "JR-East.ChuoSobuLocal.Iidabashi",
         "short_code": "JB16"
       }
-    ]
+    ],
+    "depth_m": 33.8,
+    "station_elevation_m": -19.8
   },
   {
     "station_group_code": "1131317",
@@ -2879,7 +3027,9 @@
         "station_code": "JR-East.ChuoSobuLocal.Suidobashi",
         "short_code": "JB17"
       }
-    ]
+    ],
+    "depth_m": 16.0,
+    "station_elevation_m": -6.0
   },
   {
     "station_group_code": "1131320",
@@ -2909,7 +3059,9 @@
         "station_code": "JR-East.ChuoSobuLocal.Asakusabashi",
         "short_code": "JB20"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": 1.0
   },
   {
     "station_group_code": "1131321",
@@ -2939,7 +3091,9 @@
         "station_code": "JR-East.ChuoSobuLocal.Ryogoku",
         "short_code": "JB21"
       }
-    ]
+    ],
+    "depth_m": 28.0,
+    "station_elevation_m": -26.0
   },
   {
     "station_group_code": "1131322",
@@ -2977,7 +3131,9 @@
         "station_code": "JR-East.SobuRapid.Kinshicho",
         "short_code": "JO22"
       }
-    ]
+    ],
+    "depth_m": 16.0,
+    "station_elevation_m": -9.0
   },
   {
     "station_group_code": "1131323",
@@ -3007,7 +3163,9 @@
         "station_code": "Tobu.Kameido.Kameido",
         "short_code": "TS-44"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 2.0
   },
   {
     "station_group_code": "1131324",
@@ -3029,7 +3187,9 @@
         "station_code": "JR-East.ChuoSobuLocal.Hirai",
         "short_code": "JB24"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "1131325",
@@ -3059,7 +3219,9 @@
         "station_code": "JR-East.SobuRapid.ShinKoiwa",
         "short_code": "JO23"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 2.0
   },
   {
     "station_group_code": "1131326",
@@ -3081,7 +3243,9 @@
         "station_code": "JR-East.ChuoSobuLocal.Koiwa",
         "short_code": "JB26"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "1131402",
@@ -3119,7 +3283,9 @@
         "station_code": "JR-East.SobuRapid.ShinNihombashi",
         "short_code": "JO20"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": 26.0
   },
   {
     "station_group_code": "1131403",
@@ -3157,7 +3323,9 @@
         "station_code": "JR-East.SobuRapid.Bakurocho",
         "short_code": "JO21"
       }
-    ]
+    ],
+    "depth_m": 26,
+    "station_elevation_m": -9.0
   },
   {
     "station_group_code": "1131502",
@@ -3179,7 +3347,9 @@
         "station_code": "JR-East.Ome.NishiTachikawa",
         "short_code": "JC51"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 95.0
   },
   {
     "station_group_code": "1131503",
@@ -3201,7 +3371,9 @@
         "station_code": "JR-East.Ome.HigashiNakagami",
         "short_code": "JC52"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 101.0
   },
   {
     "station_group_code": "1131504",
@@ -3223,7 +3395,9 @@
         "station_code": "JR-East.Ome.Nakagami",
         "short_code": "JC53"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 104.0
   },
   {
     "station_group_code": "1131505",
@@ -3245,7 +3419,9 @@
         "station_code": "JR-East.Ome.Akishima",
         "short_code": "JC54"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 115.0
   },
   {
     "station_group_code": "1131506",
@@ -3291,7 +3467,9 @@
         "station_code": "Seibu.Haijima.Haijima",
         "short_code": "SS36"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 122.0
   },
   {
     "station_group_code": "1131507",
@@ -3313,7 +3491,9 @@
         "station_code": "JR-East.Ome.Ushihama",
         "short_code": "JC56"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 128.0
   },
   {
     "station_group_code": "1131508",
@@ -3335,7 +3515,9 @@
         "station_code": "JR-East.Ome.Fussa",
         "short_code": "JC57"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 135.0
   },
   {
     "station_group_code": "1131509",
@@ -3357,7 +3539,9 @@
         "station_code": "JR-East.Ome.Hamura",
         "short_code": "JC58"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 147.0
   },
   {
     "station_group_code": "1131510",
@@ -3379,7 +3563,9 @@
         "station_code": "JR-East.Ome.Ozaku",
         "short_code": "JC59"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 171.0
   },
   {
     "station_group_code": "1131511",
@@ -3401,7 +3587,9 @@
         "station_code": "JR-East.Ome.Kabe",
         "short_code": "JC60"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 184.0
   },
   {
     "station_group_code": "1131512",
@@ -3423,7 +3611,9 @@
         "station_code": "JR-East.Ome.HigashiOme",
         "short_code": "JC61"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 191.0
   },
   {
     "station_group_code": "1131513",
@@ -3445,7 +3635,9 @@
         "station_code": "JR-East.Ome.Ome",
         "short_code": "JC62"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 201.0
   },
   {
     "station_group_code": "1131514",
@@ -3467,7 +3659,9 @@
         "station_code": "JR-East.Ome.Miyanohira",
         "short_code": "JC63"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 235.0
   },
   {
     "station_group_code": "1131515",
@@ -3489,7 +3683,9 @@
         "station_code": "JR-East.Ome.Hinatawada",
         "short_code": "JC64"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 224.0
   },
   {
     "station_group_code": "1131516",
@@ -3511,7 +3707,9 @@
         "station_code": "JR-East.Ome.Ishigamimae",
         "short_code": "JC65"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 256.0
   },
   {
     "station_group_code": "1131517",
@@ -3533,7 +3731,9 @@
         "station_code": "JR-East.Ome.Futamatao",
         "short_code": "JC66"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 238.0
   },
   {
     "station_group_code": "1131518",
@@ -3555,7 +3755,9 @@
         "station_code": "JR-East.Ome.Ikusabata",
         "short_code": "JC67"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 261.0
   },
   {
     "station_group_code": "1131519",
@@ -3577,7 +3779,9 @@
         "station_code": "JR-East.Ome.Sawai",
         "short_code": "JC68"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 255.0
   },
   {
     "station_group_code": "1131520",
@@ -3599,7 +3803,9 @@
         "station_code": "JR-East.Ome.Mitake",
         "short_code": "JC69"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 248.0
   },
   {
     "station_group_code": "1131521",
@@ -3621,7 +3827,9 @@
         "station_code": "JR-East.Ome.Kawai",
         "short_code": "JC70"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 279.0
   },
   {
     "station_group_code": "1131522",
@@ -3643,7 +3851,9 @@
         "station_code": "JR-East.Ome.Kori",
         "short_code": "JC71"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 296.0
   },
   {
     "station_group_code": "1131523",
@@ -3665,7 +3875,9 @@
         "station_code": "JR-East.Ome.Hatonosu",
         "short_code": "JC72"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 337.0
   },
   {
     "station_group_code": "1131524",
@@ -3687,7 +3899,9 @@
         "station_code": "JR-East.Ome.Shiromaru",
         "short_code": "JC73"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 370.0
   },
   {
     "station_group_code": "1131525",
@@ -3709,7 +3923,9 @@
         "station_code": "JR-East.Ome.OkuTama",
         "short_code": "JC74"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 346.0
   },
   {
     "station_group_code": "1131602",
@@ -3731,7 +3947,9 @@
         "station_code": "JR-East.Itsukaichi.Kumagawa",
         "short_code": "JC81"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 122.0
   },
   {
     "station_group_code": "1131603",
@@ -3753,7 +3971,9 @@
         "station_code": "JR-East.Itsukaichi.HigashiAkiru",
         "short_code": "JC82"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 139.0
   },
   {
     "station_group_code": "1131604",
@@ -3775,7 +3995,9 @@
         "station_code": "JR-East.Itsukaichi.Akigawa",
         "short_code": "JC83"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 160.0
   },
   {
     "station_group_code": "1131605",
@@ -3797,7 +4019,9 @@
         "station_code": "JR-East.Itsukaichi.MusashiHikida",
         "short_code": "JC84"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 171.0
   },
   {
     "station_group_code": "1131606",
@@ -3819,7 +4043,9 @@
         "station_code": "JR-East.Itsukaichi.MusashiMasuko",
         "short_code": "JC85"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 180.0
   },
   {
     "station_group_code": "1131607",
@@ -3841,7 +4067,9 @@
         "station_code": "JR-East.Itsukaichi.MusashiItsukaichi",
         "short_code": "JC86"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 194.0
   },
   {
     "station_group_code": "1131702",
@@ -3863,7 +4091,9 @@
         "station_code": "JR-East.Hachiko.KitaHachioji",
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 119.0
   },
   {
     "station_group_code": "1131703",
@@ -3885,7 +4115,9 @@
         "station_code": "JR-East.Hachiko.Komiya",
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 99.0
   },
   {
     "station_group_code": "1131705",
@@ -3907,7 +4139,9 @@
         "station_code": "JR-East.Hachiko.HigashiFussa",
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 140.0
   },
   {
     "station_group_code": "1131706",
@@ -3929,7 +4163,9 @@
         "station_code": "JR-East.Hachiko.Hakonegasaki",
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 142.0
   },
   {
     "station_group_code": "1131902",
@@ -3959,7 +4195,9 @@
         "station_code": "JR-East.Takasaki.Oku",
         "short_code": "JU03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "1131903",
@@ -4013,7 +4251,9 @@
         "station_code": "JR-East.Takasaki.Akabane",
         "short_code": "JU04"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 16.0
   },
   {
     "station_group_code": "1132003",
@@ -4035,7 +4275,9 @@
         "station_code": "JR-East.JobanRapid.Mikawashima",
         "short_code": "JJ03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "1132004",
@@ -4073,7 +4315,9 @@
         "station_code": "JR-East.JobanRapid.MinamiSenju",
         "short_code": "JJ04"
       }
-    ]
+    ],
+    "depth_m": 8.0,
+    "station_elevation_m": -3.0
   },
   {
     "station_group_code": "1132005",
@@ -4135,7 +4379,9 @@
         "station_code": "Tobu.TobuSkytree.KitaSenju",
         "short_code": "TS-09"
       }
-    ]
+    ],
+    "depth_m": 8.0,
+    "station_elevation_m": -3.0
   },
   {
     "station_group_code": "1132006",
@@ -4165,7 +4411,9 @@
         "station_code": "JR-East.JobanLocal.Ayase",
         "short_code": "JL19"
       }
-    ]
+    ],
+    "depth_m": 8.0,
+    "station_elevation_m": -3.0
   },
   {
     "station_group_code": "1132007",
@@ -4187,7 +4435,9 @@
         "station_code": "JR-East.JobanLocal.Kameari",
         "short_code": "JL20"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "1132008",
@@ -4217,7 +4467,9 @@
         "station_code": "JR-East.JobanLocal.Kanamachi",
         "short_code": "JL21"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "1132106",
@@ -4239,7 +4491,9 @@
         "station_code": "JR-East.SaikyoKawagoe.Itabashi",
         "short_code": "JA13"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 28.0
   },
   {
     "station_group_code": "1132107",
@@ -4261,7 +4515,9 @@
         "station_code": "JR-East.SaikyoKawagoe.Jujo",
         "short_code": "JA14"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 27.0
   },
   {
     "station_group_code": "1132109",
@@ -4283,7 +4539,9 @@
         "station_code": "JR-East.SaikyoKawagoe.KitaAkabane",
         "short_code": "JA16"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 12.0
   },
   {
     "station_group_code": "1132110",
@@ -4305,7 +4563,9 @@
         "station_code": "JR-East.SaikyoKawagoe.Ukimafunado",
         "short_code": "JA17"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 10.0
   },
   {
     "station_group_code": "1132602",
@@ -4335,7 +4595,9 @@
         "station_code": "JR-East.Keiyo.Hatchobori",
         "short_code": "JE02"
       }
-    ]
+    ],
+    "depth_m": 16,
+    "station_elevation_m": -6.0
   },
   {
     "station_group_code": "1132603",
@@ -4357,7 +4619,9 @@
         "station_code": "JR-East.Keiyo.Etchujima",
         "short_code": "JE03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "1132604",
@@ -4379,7 +4643,9 @@
         "station_code": "JR-East.Keiyo.Shiomi",
         "short_code": "JE04"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "1132605",
@@ -4417,7 +4683,9 @@
         "station_code": "JR-East.Keiyo.ShinKiba",
         "short_code": "JE05"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": -3.0
   },
   {
     "station_group_code": "1132606",
@@ -4439,7 +4707,9 @@
         "station_code": "JR-East.Keiyo.Kasairinkaikoen",
         "short_code": "JE06"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "1133211",
@@ -4461,7 +4731,9 @@
         "station_code": "JR-East.KeihinTohokuNegishi.HigashiJujo",
         "short_code": "JK37"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 14.0
   },
   {
     "station_group_code": "1133212",
@@ -4499,7 +4771,9 @@
         "station_code": "JR-East.KeihinTohokuNegishi.Oji",
         "short_code": "JK36"
       }
-    ]
+    ],
+    "depth_m": 23.5,
+    "station_elevation_m": -12.5
   },
   {
     "station_group_code": "1133213",
@@ -4521,7 +4795,9 @@
         "station_code": "JR-East.KeihinTohokuNegishi.KamiNakazato",
         "short_code": "JK35"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 11.0
   },
   {
     "station_group_code": "1133228",
@@ -4559,7 +4835,9 @@
         "station_code": "JR-East.KeihinTohokuNegishi.Oimachi",
         "short_code": "JK19"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 27.0
   },
   {
     "station_group_code": "1133229",
@@ -4581,7 +4859,9 @@
         "station_code": "JR-East.KeihinTohokuNegishi.Omori",
         "short_code": "JK18"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 23.0
   },
   {
     "station_group_code": "1133230",
@@ -4611,7 +4891,9 @@
         "station_code": "JR-East.KeihinTohokuNegishi.Kamata",
         "short_code": "JK17"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 13.0
   },
   {
     "station_group_code": "2100102",
@@ -4633,7 +4915,9 @@
         "station_code": "Tobu.Tojo.KitaIkebukuro",
         "short_code": "TJ-02"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 31.0
   },
   {
     "station_group_code": "2100103",
@@ -4655,7 +4939,9 @@
         "station_code": "Tobu.Tojo.ShimoItabashi",
         "short_code": "TJ-03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 26.0
   },
   {
     "station_group_code": "2100104",
@@ -4677,7 +4963,9 @@
         "station_code": "Tobu.Tojo.Oyama",
         "short_code": "TJ-04"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 38.0
   },
   {
     "station_group_code": "2100105",
@@ -4699,7 +4987,9 @@
         "station_code": "Tobu.Tojo.NakaItabashi",
         "short_code": "TJ-05"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 25.0
   },
   {
     "station_group_code": "2100106",
@@ -4721,7 +5011,9 @@
         "station_code": "Tobu.Tojo.Tokiwadai",
         "short_code": "TJ-06"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 34.0
   },
   {
     "station_group_code": "2100107",
@@ -4743,7 +5035,9 @@
         "station_code": "Tobu.Tojo.KamiItabashi",
         "short_code": "TJ-07"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 38.0
   },
   {
     "station_group_code": "2100108",
@@ -4765,7 +5059,9 @@
         "station_code": "Tobu.Tojo.TobuNerima",
         "short_code": "TJ-08"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 34.0
   },
   {
     "station_group_code": "2100109",
@@ -4803,7 +5099,9 @@
         "station_code": "Tobu.Tojo.ShimoAkatsuka",
         "short_code": "TJ-09"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": 19.0
   },
   {
     "station_group_code": "2100110",
@@ -4841,7 +5139,9 @@
         "station_code": "Tobu.Tojo.Narimasu",
         "short_code": "TJ-10"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": 18.0
   },
   {
     "station_group_code": "2100201",
@@ -4879,7 +5179,9 @@
         "station_code": "Tobu.TobuSkytree.Asakusa",
         "short_code": "TS-01"
       }
-    ]
+    ],
+    "depth_m": 8.0,
+    "station_elevation_m": 0.0
   },
   {
     "station_group_code": "2100202",
@@ -4901,7 +5203,9 @@
         "station_code": "Tobu.TobuSkytree.TokyoSkytree",
         "short_code": "TS-02"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "2100203",
@@ -4947,7 +5251,9 @@
         "station_code": "Tobu.TobuSkytreeBranch.Oshiage",
         "short_code": "TS-03"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": -3.0
   },
   {
     "station_group_code": "2100204",
@@ -4985,7 +5291,9 @@
         "station_code": "Tobu.TobuSkytreeBranch.Hikifune",
         "short_code": "TS-04"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "2100205",
@@ -5007,7 +5315,9 @@
         "station_code": "Tobu.TobuSkytree.HigashiMukojima",
         "short_code": "TS-05"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "2100206",
@@ -5029,7 +5339,9 @@
         "station_code": "Tobu.TobuSkytree.Kanegafuchi",
         "short_code": "TS-06"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "2100207",
@@ -5051,7 +5363,9 @@
         "station_code": "Tobu.TobuSkytree.Horikiri",
         "short_code": "TS-07"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "2100208",
@@ -5081,7 +5395,9 @@
         "station_code": "Tobu.TobuSkytree.Ushida",
         "short_code": "TS-08"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "2100210",
@@ -5103,7 +5419,9 @@
         "station_code": "Tobu.TobuSkytree.Kosuge",
         "short_code": "TS-10"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "2100211",
@@ -5125,7 +5443,9 @@
         "station_code": "Tobu.TobuSkytree.Gotanno",
         "short_code": "TS-11"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "2100212",
@@ -5147,7 +5467,9 @@
         "station_code": "Tobu.TobuSkytree.Umejima",
         "short_code": "TS-12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "2100213",
@@ -5177,7 +5499,9 @@
         "station_code": "Tobu.Daishi.Nishiarai",
         "short_code": "TS-13"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "2100214",
@@ -5199,7 +5523,9 @@
         "station_code": "Tobu.TobuSkytree.Takenotsuka",
         "short_code": "TS-14"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "2100502",
@@ -5221,7 +5547,9 @@
         "station_code": "Tobu.Kameido.Omurai",
         "short_code": "TS-41"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "2100503",
@@ -5243,7 +5571,9 @@
         "station_code": "Tobu.Kameido.HigashiAzuma",
         "short_code": "TS-42"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "2100504",
@@ -5265,7 +5595,9 @@
         "station_code": "Tobu.Kameido.Kameidosuijin",
         "short_code": "TS-43"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 2.0
   },
   {
     "station_group_code": "2100602",
@@ -5287,7 +5619,9 @@
         "station_code": "Tobu.Daishi.Daishimae",
         "short_code": "TS-51"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "2200102",
@@ -5309,7 +5643,9 @@
         "station_code": "Seibu.Ikebukuro.Shiinamachi",
         "short_code": "SI02"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 35.0
   },
   {
     "station_group_code": "2200103",
@@ -5331,7 +5667,9 @@
         "station_code": "Seibu.Ikebukuro.HigashiNagasaki",
         "short_code": "SI03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 38.0
   },
   {
     "station_group_code": "2200104",
@@ -5353,7 +5691,9 @@
         "station_code": "Seibu.Ikebukuro.Ekoda",
         "short_code": "SI04"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 41.0
   },
   {
     "station_group_code": "2200105",
@@ -5375,7 +5715,9 @@
         "station_code": "Seibu.Ikebukuro.Sakuradai",
         "short_code": "SI05"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 45.0
   },
   {
     "station_group_code": "2200106",
@@ -5421,7 +5763,9 @@
         "station_code": "Seibu.Toshima.Nerima",
         "short_code": "SI06"
       }
-    ]
+    ],
+    "depth_m": 38.4,
+    "station_elevation_m": 5.6
   },
   {
     "station_group_code": "2200107",
@@ -5443,7 +5787,9 @@
         "station_code": "Seibu.Ikebukuro.Nakamurabashi",
         "short_code": "SI07"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 45.0
   },
   {
     "station_group_code": "2200108",
@@ -5465,7 +5811,9 @@
         "station_code": "Seibu.Ikebukuro.Fujimidai",
         "short_code": "SI08"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 48.0
   },
   {
     "station_group_code": "2200109",
@@ -5487,7 +5835,9 @@
         "station_code": "Seibu.Ikebukuro.NerimaTakanodai",
         "short_code": "SI09"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 48.0
   },
   {
     "station_group_code": "2200110",
@@ -5509,7 +5859,9 @@
         "station_code": "Seibu.Ikebukuro.ShakujiiKoen",
         "short_code": "SI10"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 50.0
   },
   {
     "station_group_code": "2200111",
@@ -5531,7 +5883,9 @@
         "station_code": "Seibu.Ikebukuro.OizumiGakuen",
         "short_code": "SI11"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 55.0
   },
   {
     "station_group_code": "2200112",
@@ -5553,7 +5907,9 @@
         "station_code": "Seibu.Ikebukuro.Hoya",
         "short_code": "SI12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 58.0
   },
   {
     "station_group_code": "2200113",
@@ -5575,7 +5931,9 @@
         "station_code": "Seibu.Ikebukuro.Hibarigaoka",
         "short_code": "SI13"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 59.0
   },
   {
     "station_group_code": "2200114",
@@ -5597,7 +5955,9 @@
         "station_code": "Seibu.Ikebukuro.HigashiKurume",
         "short_code": "SI14"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 51.0
   },
   {
     "station_group_code": "2200115",
@@ -5619,7 +5979,9 @@
         "station_code": "Seibu.Ikebukuro.Kiyose",
         "short_code": "SI15"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 57.0
   },
   {
     "station_group_code": "2200116",
@@ -5641,7 +6003,9 @@
         "station_code": "Seibu.Ikebukuro.Akitsu",
         "short_code": "SI16"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 58.0
   },
   {
     "station_group_code": "2200301",
@@ -5679,7 +6043,9 @@
         "station_code": "Seibu.SeibuYurakucho.KotakeMukaihara",
         "short_code": "SI37"
       }
-    ]
+    ],
+    "depth_m": 23.0,
+    "station_elevation_m": 14.0
   },
   {
     "station_group_code": "2200302",
@@ -5701,7 +6067,9 @@
         "station_code": "Seibu.SeibuYurakucho.ShinSakuradai",
         "short_code": "SI38"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 39.0
   },
   {
     "station_group_code": "2200402",
@@ -5731,7 +6099,9 @@
         "station_code": "Seibu.Toshima.Toshimaen",
         "short_code": "SI39"
       }
-    ]
+    ],
+    "depth_m": 40,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "2200601",
@@ -5761,7 +6131,9 @@
         "station_code": "Seibu.Yamaguchi.SeibuYuenchi",
         "short_code": "SY01"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 100.0
   },
   {
     "station_group_code": "2200701",
@@ -5783,7 +6155,9 @@
         "station_code": "Seibu.Shinjuku.SeibuShinjuku",
         "short_code": "SS01"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 42.0
   },
   {
     "station_group_code": "2200703",
@@ -5805,7 +6179,9 @@
         "station_code": "Seibu.Shinjuku.ShimoOchiai",
         "short_code": "SS03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 20.0
   },
   {
     "station_group_code": "2200704",
@@ -5835,7 +6211,9 @@
         "station_code": "Seibu.Shinjuku.Nakai",
         "short_code": "SS04"
       }
-    ]
+    ],
+    "depth_m": 34.0,
+    "station_elevation_m": -10.0
   },
   {
     "station_group_code": "2200705",
@@ -5857,7 +6235,9 @@
         "station_code": "Seibu.Shinjuku.AraiyakushiMae",
         "short_code": "SS05"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 42.0
   },
   {
     "station_group_code": "2200706",
@@ -5879,7 +6259,9 @@
         "station_code": "Seibu.Shinjuku.Numabukuro",
         "short_code": "SS06"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 40.0
   },
   {
     "station_group_code": "2200707",
@@ -5901,7 +6283,9 @@
         "station_code": "Seibu.Shinjuku.Nogata",
         "short_code": "SS07"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 44.0
   },
   {
     "station_group_code": "2200708",
@@ -5923,7 +6307,9 @@
         "station_code": "Seibu.Shinjuku.ToritsuKasei",
         "short_code": "SS08"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 47.0
   },
   {
     "station_group_code": "2200709",
@@ -5945,7 +6331,9 @@
         "station_code": "Seibu.Shinjuku.Saginomiya",
         "short_code": "SS09"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 44.0
   },
   {
     "station_group_code": "2200710",
@@ -5967,7 +6355,9 @@
         "station_code": "Seibu.Shinjuku.ShimoIgusa",
         "short_code": "SS10"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 49.0
   },
   {
     "station_group_code": "2200711",
@@ -5989,7 +6379,9 @@
         "station_code": "Seibu.Shinjuku.Iogi",
         "short_code": "SS11"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 47.0
   },
   {
     "station_group_code": "2200712",
@@ -6011,7 +6403,9 @@
         "station_code": "Seibu.Shinjuku.KamiIgusa",
         "short_code": "SS12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 53.0
   },
   {
     "station_group_code": "2200713",
@@ -6033,7 +6427,9 @@
         "station_code": "Seibu.Shinjuku.KamiShakujii",
         "short_code": "SS13"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 55.0
   },
   {
     "station_group_code": "2200714",
@@ -6055,7 +6451,9 @@
         "station_code": "Seibu.Shinjuku.MusashiSeki",
         "short_code": "SS14"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 50.0
   },
   {
     "station_group_code": "2200715",
@@ -6077,7 +6475,9 @@
         "station_code": "Seibu.Shinjuku.HigashiFushimi",
         "short_code": "SS15"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 58.0
   },
   {
     "station_group_code": "2200716",
@@ -6099,7 +6499,9 @@
         "station_code": "Seibu.Shinjuku.SeibuYagisawa",
         "short_code": "SS16"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 62.0
   },
   {
     "station_group_code": "2200717",
@@ -6121,7 +6523,9 @@
         "station_code": "Seibu.Shinjuku.Tanashi",
         "short_code": "SS17"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 66.0
   },
   {
     "station_group_code": "2200718",
@@ -6143,7 +6547,9 @@
         "station_code": "Seibu.Shinjuku.HanaKoganei",
         "short_code": "SS18"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 73.0
   },
   {
     "station_group_code": "2200719",
@@ -6173,7 +6579,9 @@
         "station_code": "Seibu.Shinjuku.Kodaira",
         "short_code": "SS19"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 75.0
   },
   {
     "station_group_code": "2200720",
@@ -6195,7 +6603,9 @@
         "station_code": "Seibu.Shinjuku.Kumegawa",
         "short_code": "SS20"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 78.0
   },
   {
     "station_group_code": "2200721",
@@ -6233,7 +6643,9 @@
         "station_code": "Seibu.Seibuen.HigashiMurayama",
         "short_code": "SK05"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 79.0
   },
   {
     "station_group_code": "2200802",
@@ -6263,7 +6675,9 @@
         "station_code": "Seibu.Haijima.Hagiyama",
         "short_code": "SS30"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 77.0
   },
   {
     "station_group_code": "2200803",
@@ -6293,7 +6707,9 @@
         "station_code": "Seibu.Haijima.Ogawa",
         "short_code": "SS31"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 83.0
   },
   {
     "station_group_code": "2200804",
@@ -6315,7 +6731,9 @@
         "station_code": "Seibu.Haijima.HigashiYamatoshi",
         "short_code": "SS32"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 102.0
   },
   {
     "station_group_code": "2200805",
@@ -6345,7 +6763,9 @@
         "station_code": "Seibu.Haijima.TamagawaJosui",
         "short_code": "SS33"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 101.0
   },
   {
     "station_group_code": "2200806",
@@ -6367,7 +6787,9 @@
         "station_code": "Seibu.Haijima.MusashiSunagawa",
         "short_code": "SS34"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 107.0
   },
   {
     "station_group_code": "2200807",
@@ -6389,7 +6811,9 @@
         "station_code": "Seibu.Haijima.SeibuTachikawa",
         "short_code": "SS35"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 114.0
   },
   {
     "station_group_code": "2200902",
@@ -6411,7 +6835,9 @@
         "station_code": "Seibu.Seibuen.Seibuen",
         "short_code": "SK06"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 89.0
   },
   {
     "station_group_code": "2201002",
@@ -6433,7 +6859,9 @@
         "station_code": "Seibu.Kokubunji.Koigakubo",
         "short_code": "SK02"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 84.0
   },
   {
     "station_group_code": "2201003",
@@ -6455,7 +6883,9 @@
         "station_code": "Seibu.Kokubunji.Takanodai",
         "short_code": "SK03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 88.0
   },
   {
     "station_group_code": "2201102",
@@ -6477,7 +6907,9 @@
         "station_code": "Seibu.Tamako.HitotsubashiGakuen",
         "short_code": "ST02"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 81.0
   },
   {
     "station_group_code": "2201103",
@@ -6499,7 +6931,9 @@
         "station_code": "Seibu.Tamako.OmeKaido",
         "short_code": "ST03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 77.0
   },
   {
     "station_group_code": "2201106",
@@ -6521,7 +6955,9 @@
         "station_code": "Seibu.Tamako.Yasaka",
         "short_code": "ST05"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 81.0
   },
   {
     "station_group_code": "2201107",
@@ -6543,7 +6979,9 @@
         "station_code": "Seibu.Tamako.MusashiYamato",
         "short_code": "ST06"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 104.0
   },
   {
     "station_group_code": "2201202",
@@ -6565,7 +7003,9 @@
         "station_code": "Seibu.Tamagawa.ShinKoganei",
         "short_code": "SW02"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 66.0
   },
   {
     "station_group_code": "2201203",
@@ -6587,7 +7027,9 @@
         "station_code": "Seibu.Tamagawa.Tama",
         "short_code": "SW03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 48.0
   },
   {
     "station_group_code": "2201204",
@@ -6609,7 +7051,9 @@
         "station_code": "Seibu.Tamagawa.Shiraitodai",
         "short_code": "SW04"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 47.0
   },
   {
     "station_group_code": "2201205",
@@ -6631,7 +7075,9 @@
         "station_code": "Seibu.Tamagawa.KyoteijoMae",
         "short_code": "SW05"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 39.0
   },
   {
     "station_group_code": "2201206",
@@ -6653,7 +7099,9 @@
         "station_code": "Seibu.Tamagawa.Koremasa",
         "short_code": "SW06"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 45.0
   },
   {
     "station_group_code": "2300101",
@@ -6683,7 +7131,9 @@
         "station_code": "Keisei.Main.KeiseiUeno",
         "short_code": "KS01"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 18.0
   },
   {
     "station_group_code": "2300103",
@@ -6705,7 +7155,9 @@
         "station_code": "Keisei.Main.ShimMikawashima",
         "short_code": "KS03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 10.0
   },
   {
     "station_group_code": "2300104",
@@ -6743,7 +7195,9 @@
         "station_code": "Toei.Arakawa.MachiyaEkimae",
         "short_code": "SA-06"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": -2.0
   },
   {
     "station_group_code": "2300105",
@@ -6765,7 +7219,9 @@
         "station_code": "Keisei.Main.Senjuohashi",
         "short_code": "KS05"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "2300107",
@@ -6787,7 +7243,9 @@
         "station_code": "Keisei.Main.Horikirishobuen",
         "short_code": "KS07"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "2300108",
@@ -6809,7 +7267,9 @@
         "station_code": "Keisei.Main.Ohanajaya",
         "short_code": "KS08"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "2300109",
@@ -6847,7 +7307,9 @@
         "station_code": "Keisei.Main.Aoto",
         "short_code": "KS09"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "2300110",
@@ -6901,7 +7363,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "2300111",
@@ -6923,7 +7387,9 @@
         "station_code": "Keisei.Main.KeiseiKoiwa",
         "short_code": "KS11"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "2300112",
@@ -6945,7 +7411,9 @@
         "station_code": "Keisei.Main.Edogawa",
         "short_code": "KS12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "2300202",
@@ -6967,7 +7435,9 @@
         "station_code": "Keisei.Oshiage.KeiseiHikifune",
         "short_code": "KS46"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "2300203",
@@ -6989,7 +7459,9 @@
         "station_code": "Keisei.Oshiage.Yahiro",
         "short_code": "KS47"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "2300204",
@@ -7011,7 +7483,9 @@
         "station_code": "Keisei.Oshiage.Yotsugi",
         "short_code": "KS48"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "2300205",
@@ -7033,7 +7507,9 @@
         "station_code": "Keisei.Oshiage.KeiseiTateishi",
         "short_code": "KS49"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "2300302",
@@ -7055,7 +7531,9 @@
         "station_code": "Keisei.Kanamachi.Shibamata",
         "short_code": "KS50"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "2400102",
@@ -7085,7 +7563,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 51.0
   },
   {
     "station_group_code": "2400103",
@@ -7115,7 +7595,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 47.0
   },
   {
     "station_group_code": "2400104",
@@ -7145,7 +7627,9 @@
         "station_code": "Keio.Keio.Sasazuka",
         "short_code": "KO4"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 48.0
   },
   {
     "station_group_code": "2400105",
@@ -7167,7 +7651,9 @@
         "station_code": "Keio.Keio.Daitabashi",
         "short_code": "KO5"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 52.0
   },
   {
     "station_group_code": "2400106",
@@ -7197,7 +7683,9 @@
         "station_code": "Keio.Keio.Meidaimae",
         "short_code": "KO6"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 49.0
   },
   {
     "station_group_code": "2400107",
@@ -7227,7 +7715,9 @@
         "station_code": "Keio.Keio.ShimoTakaido",
         "short_code": "KO7"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 50.0
   },
   {
     "station_group_code": "2400108",
@@ -7249,7 +7739,9 @@
         "station_code": "Keio.Keio.Sakurajosui",
         "short_code": "KO8"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 48.0
   },
   {
     "station_group_code": "2400109",
@@ -7271,7 +7763,9 @@
         "station_code": "Keio.Keio.KamiKitazawa",
         "short_code": "KO9"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 46.0
   },
   {
     "station_group_code": "2400110",
@@ -7293,7 +7787,9 @@
         "station_code": "Keio.Keio.HachimanYama",
         "short_code": "KO10"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 48.0
   },
   {
     "station_group_code": "2400111",
@@ -7315,7 +7811,9 @@
         "station_code": "Keio.Keio.RokaKoen",
         "short_code": "KO11"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 47.0
   },
   {
     "station_group_code": "2400112",
@@ -7337,7 +7835,9 @@
         "station_code": "Keio.Keio.ChitoseKarasuyama",
         "short_code": "KO12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 54.0
   },
   {
     "station_group_code": "2400113",
@@ -7359,7 +7859,9 @@
         "station_code": "Keio.Keio.Sengawa",
         "short_code": "KO13"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 53.0
   },
   {
     "station_group_code": "2400114",
@@ -7381,7 +7883,9 @@
         "station_code": "Keio.Keio.Tsutsujigaoka",
         "short_code": "KO14"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 43.0
   },
   {
     "station_group_code": "2400115",
@@ -7403,7 +7907,9 @@
         "station_code": "Keio.Keio.Shibasaki",
         "short_code": "KO15"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 34.0
   },
   {
     "station_group_code": "2400116",
@@ -7425,7 +7931,9 @@
         "station_code": "Keio.Keio.Kokuryo",
         "short_code": "KO16"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 39.0
   },
   {
     "station_group_code": "2400117",
@@ -7447,7 +7955,9 @@
         "station_code": "Keio.Keio.Fuda",
         "short_code": "KO17"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 35.0
   },
   {
     "station_group_code": "2400118",
@@ -7477,7 +7987,9 @@
         "station_code": "Keio.Keio.Chofu",
         "short_code": "KO18"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 40.0
   },
   {
     "station_group_code": "2400119",
@@ -7499,7 +8011,9 @@
         "station_code": "Keio.Keio.NishiChofu",
         "short_code": "KO19"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 41.0
   },
   {
     "station_group_code": "2400120",
@@ -7521,7 +8035,9 @@
         "station_code": "Keio.Keio.Tobitakyu",
         "short_code": "KO20"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 44.0
   },
   {
     "station_group_code": "2400121",
@@ -7543,7 +8059,9 @@
         "station_code": "Keio.Keio.Musashinodai",
         "short_code": "KO21"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 48.0
   },
   {
     "station_group_code": "2400122",
@@ -7565,7 +8083,9 @@
         "station_code": "Keio.Keio.TamaReien",
         "short_code": "KO22"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 50.0
   },
   {
     "station_group_code": "2400123",
@@ -7595,7 +8115,9 @@
         "station_code": "Keio.Keio.HigashiFuchu",
         "short_code": "KO23"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 56.0
   },
   {
     "station_group_code": "2400124",
@@ -7617,7 +8139,9 @@
         "station_code": "Keio.Keio.Fuchu",
         "short_code": "KO24"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 66.0
   },
   {
     "station_group_code": "2400126",
@@ -7639,7 +8163,9 @@
         "station_code": "Keio.Keio.Nakagawara",
         "short_code": "KO26"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 55.0
   },
   {
     "station_group_code": "2400127",
@@ -7661,7 +8187,9 @@
         "station_code": "Keio.Keio.SeisekiSakuragaoka",
         "short_code": "KO27"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 67.0
   },
   {
     "station_group_code": "2400128",
@@ -7683,7 +8211,9 @@
         "station_code": "Keio.Keio.Mogusaen",
         "short_code": "KO28"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 62.0
   },
   {
     "station_group_code": "2400129",
@@ -7721,7 +8251,9 @@
         "station_code": "Keio.Keio.Takahatafudo",
         "short_code": "KO29"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 73.0
   },
   {
     "station_group_code": "2400130",
@@ -7743,7 +8275,9 @@
         "station_code": "Keio.Keio.Minamidaira",
         "short_code": "KO30"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 80.0
   },
   {
     "station_group_code": "2400131",
@@ -7765,7 +8299,9 @@
         "station_code": "Keio.Keio.HirayamajoshiKoen",
         "short_code": "KO31"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 84.0
   },
   {
     "station_group_code": "2400132",
@@ -7787,7 +8323,9 @@
         "station_code": "Keio.Keio.Naganuma",
         "short_code": "KO32"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 91.0
   },
   {
     "station_group_code": "2400133",
@@ -7817,7 +8355,9 @@
         "station_code": "Keio.Takao.Kitano",
         "short_code": "KO33"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 102.0
   },
   {
     "station_group_code": "2400134",
@@ -7839,7 +8379,9 @@
         "station_code": "Keio.Keio.KeioHachioji",
         "short_code": "KO34"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 116.0
   },
   {
     "station_group_code": "2400202",
@@ -7861,7 +8403,9 @@
         "station_code": "Keio.Sagamihara.KeioTamagawa",
         "short_code": "KO35"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 31.0
   },
   {
     "station_group_code": "2400204",
@@ -7883,7 +8427,9 @@
         "station_code": "Keio.Sagamihara.KeioYomiuriLand",
         "short_code": "KO37"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 38.0
   },
   {
     "station_group_code": "2400205",
@@ -7905,7 +8451,9 @@
         "station_code": "Keio.Sagamihara.Inagi",
         "short_code": "KO38"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 56.0
   },
   {
     "station_group_code": "2400207",
@@ -7935,7 +8483,9 @@
         "station_code": "Odakyu.Tama.OdakyuNagayama",
         "short_code": "OT05"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 84.0
   },
   {
     "station_group_code": "2400208",
@@ -7973,7 +8523,9 @@
         "station_code": "Odakyu.Tama.OdakyuTamaCenter",
         "short_code": "OT06"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 98.0
   },
   {
     "station_group_code": "2400209",
@@ -7995,7 +8547,9 @@
         "station_code": "Keio.Sagamihara.KeioHorinouchi",
         "short_code": "KO42"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 91.0
   },
   {
     "station_group_code": "2400210",
@@ -8017,7 +8571,9 @@
         "station_code": "Keio.Sagamihara.MinamiOsawa",
         "short_code": "KO43"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 127.0
   },
   {
     "station_group_code": "2400211",
@@ -8039,7 +8595,9 @@
         "station_code": "Keio.Sagamihara.Tamasakai",
         "short_code": "KO44"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 150.0
   },
   {
     "station_group_code": "2400302",
@@ -8061,7 +8619,9 @@
         "station_code": "Keio.Takao.KeioKatakura",
         "short_code": "KO48"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 133.0
   },
   {
     "station_group_code": "2400303",
@@ -8083,7 +8643,9 @@
         "station_code": "Keio.Takao.Yamada",
         "short_code": "KO49"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 145.0
   },
   {
     "station_group_code": "2400304",
@@ -8105,7 +8667,9 @@
         "station_code": "Keio.Takao.Mejirodai",
         "short_code": "KO50"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 164.0
   },
   {
     "station_group_code": "2400305",
@@ -8127,7 +8691,9 @@
         "station_code": "Keio.Takao.Hazama",
         "short_code": "KO51"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 188.0
   },
   {
     "station_group_code": "2400307",
@@ -8149,7 +8715,9 @@
         "station_code": "Keio.Takao.Takaosanguchi",
         "short_code": "KO53"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 215.0
   },
   {
     "station_group_code": "2400402",
@@ -8171,7 +8739,9 @@
         "station_code": "Keio.Keibajo.FuchukeibaSeimommae",
         "short_code": "KO46"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 56.0
   },
   {
     "station_group_code": "2400502",
@@ -8201,7 +8771,9 @@
         "station_code": "Keio.Dobutsuen.TamaDobutsukoen",
         "short_code": "KO47"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 124.0
   },
   {
     "station_group_code": "2400602",
@@ -8223,7 +8795,9 @@
         "station_code": "Keio.Inokashira.Shinsen",
         "short_code": "IN2"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 37.0
   },
   {
     "station_group_code": "2400603",
@@ -8245,7 +8819,9 @@
         "station_code": "Keio.Inokashira.KomabaTodaimae",
         "short_code": "IN3"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 44.0
   },
   {
     "station_group_code": "2400604",
@@ -8267,7 +8843,9 @@
         "station_code": "Keio.Inokashira.Ikenoue",
         "short_code": "IN4"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 46.0
   },
   {
     "station_group_code": "2400605",
@@ -8297,7 +8875,9 @@
         "station_code": "Odakyu.Odawara.ShimoKitazawa",
         "short_code": "OH07"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 46.0
   },
   {
     "station_group_code": "2400606",
@@ -8319,7 +8899,9 @@
         "station_code": "Keio.Inokashira.Shindaita",
         "short_code": "IN6"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 47.0
   },
   {
     "station_group_code": "2400607",
@@ -8341,7 +8923,9 @@
         "station_code": "Keio.Inokashira.HigashiMatsubara",
         "short_code": "IN7"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 47.0
   },
   {
     "station_group_code": "2400609",
@@ -8363,7 +8947,9 @@
         "station_code": "Keio.Inokashira.Eifukucho",
         "short_code": "IN9"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 48.0
   },
   {
     "station_group_code": "2400610",
@@ -8385,7 +8971,9 @@
         "station_code": "Keio.Inokashira.NishiEifuku",
         "short_code": "IN10"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 45.0
   },
   {
     "station_group_code": "2400611",
@@ -8407,7 +8995,9 @@
         "station_code": "Keio.Inokashira.Hamadayama",
         "short_code": "IN11"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 48.0
   },
   {
     "station_group_code": "2400612",
@@ -8429,7 +9019,9 @@
         "station_code": "Keio.Inokashira.Takaido",
         "short_code": "IN12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 46.0
   },
   {
     "station_group_code": "2400613",
@@ -8451,7 +9043,9 @@
         "station_code": "Keio.Inokashira.Fujimigaoka",
         "short_code": "IN13"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 46.0
   },
   {
     "station_group_code": "2400614",
@@ -8473,7 +9067,9 @@
         "station_code": "Keio.Inokashira.Kugayama",
         "short_code": "IN14"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 49.0
   },
   {
     "station_group_code": "2400615",
@@ -8495,7 +9091,9 @@
         "station_code": "Keio.Inokashira.Mitakadai",
         "short_code": "IN15"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 48.0
   },
   {
     "station_group_code": "2400616",
@@ -8517,7 +9115,9 @@
         "station_code": "Keio.Inokashira.InokashiraKoen",
         "short_code": "IN16"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 55.0
   },
   {
     "station_group_code": "2500102",
@@ -8539,7 +9139,9 @@
         "station_code": "Odakyu.Odawara.MinamiShinjuku",
         "short_code": "OH02"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 34.0
   },
   {
     "station_group_code": "2500103",
@@ -8561,7 +9163,9 @@
         "station_code": "Odakyu.Odawara.Sangubashi",
         "short_code": "OH03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 38.0
   },
   {
     "station_group_code": "2500104",
@@ -8591,7 +9195,9 @@
         "station_code": "TokyoMetro.Chiyoda.YoyogiKoen",
         "short_code": "C02"
       }
-    ]
+    ],
+    "depth_m": 22,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "2500105",
@@ -8621,7 +9227,9 @@
         "station_code": "TokyoMetro.Chiyoda.YoyogiUehara",
         "short_code": "C01"
       }
-    ]
+    ],
+    "depth_m": 8.0,
+    "station_elevation_m": 22.0
   },
   {
     "station_group_code": "2500106",
@@ -8643,7 +9251,9 @@
         "station_code": "Odakyu.Odawara.HigashiKitazawa",
         "short_code": "OH06"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 45.0
   },
   {
     "station_group_code": "2500108",
@@ -8665,7 +9275,9 @@
         "station_code": "Odakyu.Odawara.SetagayaDaita",
         "short_code": "OH08"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 46.0
   },
   {
     "station_group_code": "2500109",
@@ -8687,7 +9299,9 @@
         "station_code": "Odakyu.Odawara.Umegaoka",
         "short_code": "OH09"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 36.0
   },
   {
     "station_group_code": "2500110",
@@ -8717,7 +9331,9 @@
         "station_code": "Odakyu.Odawara.Gotokuji",
         "short_code": "OH10"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 37.0
   },
   {
     "station_group_code": "2500111",
@@ -8739,7 +9355,9 @@
         "station_code": "Odakyu.Odawara.Kyodo",
         "short_code": "OH11"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 52.0
   },
   {
     "station_group_code": "2500112",
@@ -8761,7 +9379,9 @@
         "station_code": "Odakyu.Odawara.ChitoseFunabashi",
         "short_code": "OH12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 48.0
   },
   {
     "station_group_code": "2500113",
@@ -8783,7 +9403,9 @@
         "station_code": "Odakyu.Odawara.SoshigayaOkura",
         "short_code": "OH13"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 46.0
   },
   {
     "station_group_code": "2500114",
@@ -8805,7 +9427,9 @@
         "station_code": "Odakyu.Odawara.SeijogakuenMae",
         "short_code": "OH14"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 49.0
   },
   {
     "station_group_code": "2500115",
@@ -8827,7 +9451,9 @@
         "station_code": "Odakyu.Odawara.Kitami",
         "short_code": "OH15"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 27.0
   },
   {
     "station_group_code": "2500116",
@@ -8849,7 +9475,9 @@
         "station_code": "Odakyu.Odawara.Komae",
         "short_code": "OH16"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 30.0
   },
   {
     "station_group_code": "2500117",
@@ -8871,7 +9499,9 @@
         "station_code": "Odakyu.Odawara.IzumiTamagawa",
         "short_code": "OH17"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 27.0
   },
   {
     "station_group_code": "2500125",
@@ -8893,7 +9523,9 @@
         "station_code": "Odakyu.Odawara.Tsurukawa",
         "short_code": "OH25"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 41.0
   },
   {
     "station_group_code": "2500126",
@@ -8915,7 +9547,9 @@
         "station_code": "Odakyu.Odawara.TamagawagakuenMae",
         "short_code": "OH26"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 77.0
   },
   {
     "station_group_code": "2500308",
@@ -8937,7 +9571,9 @@
         "station_code": "Odakyu.Tama.Karakida",
         "short_code": "OT07"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 144.0
   },
   {
     "station_group_code": "2600102",
@@ -8959,7 +9595,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 36.0
   },
   {
     "station_group_code": "2600103",
@@ -8989,7 +9627,9 @@
         "station_code": "TokyoMetro.Hibiya.NakaMeguro",
         "short_code": "H01"
       }
-    ]
+    ],
+    "depth_m": 16,
+    "station_elevation_m": 2.0
   },
   {
     "station_group_code": "2600104",
@@ -9011,7 +9651,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 33.0
   },
   {
     "station_group_code": "2600105",
@@ -9033,7 +9675,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 39.0
   },
   {
     "station_group_code": "2600106",
@@ -9055,7 +9699,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 32.0
   },
   {
     "station_group_code": "2600107",
@@ -9077,7 +9723,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 29.0
   },
   {
     "station_group_code": "2600108",
@@ -9099,7 +9747,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 38.0
   },
   {
     "station_group_code": "2600109",
@@ -9121,7 +9771,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 17.0
   },
   {
     "station_group_code": "2600202",
@@ -9143,7 +9795,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 16.0
   },
   {
     "station_group_code": "2600203",
@@ -9165,7 +9819,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 36.0
   },
   {
     "station_group_code": "2600204",
@@ -9187,7 +9843,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 29.0
   },
   {
     "station_group_code": "2600205",
@@ -9209,7 +9867,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 39.0
   },
   {
     "station_group_code": "2600206",
@@ -9231,7 +9891,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 44.0
   },
   {
     "station_group_code": "2600207",
@@ -9253,7 +9915,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 34.0
   },
   {
     "station_group_code": "2600302",
@@ -9275,7 +9939,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 25.0
   },
   {
     "station_group_code": "2600303",
@@ -9297,7 +9963,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 43.0
   },
   {
     "station_group_code": "2600304",
@@ -9319,7 +9987,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 44.0
   },
   {
     "station_group_code": "2600305",
@@ -9341,7 +10011,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 42.0
   },
   {
     "station_group_code": "2600306",
@@ -9363,7 +10035,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 38.0
   },
   {
     "station_group_code": "2600307",
@@ -9385,7 +10059,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 18.0
   },
   {
     "station_group_code": "2600323",
@@ -9407,7 +10083,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 70.0
   },
   {
     "station_group_code": "2600324",
@@ -9429,7 +10107,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 72.0
   },
   {
     "station_group_code": "2600325",
@@ -9451,7 +10131,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 78.0
   },
   {
     "station_group_code": "2600402",
@@ -9473,7 +10155,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 19.0
   },
   {
     "station_group_code": "2600403",
@@ -9495,7 +10179,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 28.0
   },
   {
     "station_group_code": "2600404",
@@ -9525,7 +10211,9 @@
         "station_code": "Toei.Asakusa.Nakanobu",
         "short_code": "A-03"
       }
-    ]
+    ],
+    "depth_m": 15.0,
+    "station_elevation_m": 13.0
   },
   {
     "station_group_code": "2600405",
@@ -9547,7 +10235,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 23.0
   },
   {
     "station_group_code": "2600406",
@@ -9569,7 +10259,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 31.0
   },
   {
     "station_group_code": "2600407",
@@ -9591,7 +10283,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 37.0
   },
   {
     "station_group_code": "2600409",
@@ -9613,7 +10307,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 26.0
   },
   {
     "station_group_code": "2600411",
@@ -9635,7 +10331,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 34.0
   },
   {
     "station_group_code": "2600412",
@@ -9657,7 +10355,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 32.0
   },
   {
     "station_group_code": "2600413",
@@ -9679,7 +10379,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 32.0
   },
   {
     "station_group_code": "2600414",
@@ -9701,7 +10403,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 39.0
   },
   {
     "station_group_code": "2600502",
@@ -9723,7 +10427,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 18.0
   },
   {
     "station_group_code": "2600503",
@@ -9753,7 +10459,9 @@
         "station_code": "Toei.Asakusa.Togoshi",
         "short_code": "A-04"
       }
-    ]
+    ],
+    "depth_m": 16,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "2600504",
@@ -9775,7 +10483,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 29.0
   },
   {
     "station_group_code": "2600506",
@@ -9797,7 +10507,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 38.0
   },
   {
     "station_group_code": "2600507",
@@ -9819,7 +10531,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 25.0
   },
   {
     "station_group_code": "2600508",
@@ -9841,7 +10555,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 22.0
   },
   {
     "station_group_code": "2600509",
@@ -9863,7 +10579,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 27.0
   },
   {
     "station_group_code": "2600510",
@@ -9885,7 +10603,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 25.0
   },
   {
     "station_group_code": "2600511",
@@ -9907,7 +10627,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 21.0
   },
   {
     "station_group_code": "2600512",
@@ -9929,7 +10651,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "2600513",
@@ -9951,7 +10675,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "2600514",
@@ -9973,7 +10699,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "2600602",
@@ -9995,7 +10723,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 11.0
   },
   {
     "station_group_code": "2600603",
@@ -10017,7 +10747,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 10.0
   },
   {
     "station_group_code": "2600604",
@@ -10039,7 +10771,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "2600605",
@@ -10061,7 +10795,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "2600606",
@@ -10083,7 +10819,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "2600702",
@@ -10105,7 +10843,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 33.0
   },
   {
     "station_group_code": "2600703",
@@ -10127,7 +10867,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 33.0
   },
   {
     "station_group_code": "2600704",
@@ -10149,7 +10891,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 41.0
   },
   {
     "station_group_code": "2600705",
@@ -10171,7 +10915,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 41.0
   },
   {
     "station_group_code": "2600706",
@@ -10193,7 +10939,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 37.0
   },
   {
     "station_group_code": "2600707",
@@ -10215,7 +10963,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 42.0
   },
   {
     "station_group_code": "2600709",
@@ -10237,7 +10987,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 41.0
   },
   {
     "station_group_code": "2700101",
@@ -10267,7 +11019,9 @@
         "station_code": "Toei.Asakusa.Sengakuji",
         "short_code": "A-07"
       }
-    ]
+    ],
+    "depth_m": 15.0,
+    "station_elevation_m": -8.0
   },
   {
     "station_group_code": "2700103",
@@ -10289,7 +11043,9 @@
         "station_code": "Keikyu.Main.Kitashinagawa",
         "short_code": "KK02"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 13.0
   },
   {
     "station_group_code": "2700104",
@@ -10311,7 +11067,9 @@
         "station_code": "Keikyu.Main.Shimbamba",
         "short_code": "KK03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "2700105",
@@ -10333,7 +11091,9 @@
         "station_code": "Keikyu.Main.AomonoYokocho",
         "short_code": "KK04"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 10.0
   },
   {
     "station_group_code": "2700106",
@@ -10355,7 +11115,9 @@
         "station_code": "Keikyu.Main.Samezu",
         "short_code": "KK05"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 11.0
   },
   {
     "station_group_code": "2700107",
@@ -10377,7 +11139,9 @@
         "station_code": "Keikyu.Main.Tachiaigawa",
         "short_code": "KK06"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "2700108",
@@ -10399,7 +11163,9 @@
         "station_code": "Keikyu.Main.Omorikaigan",
         "short_code": "KK07"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "2700109",
@@ -10421,7 +11187,9 @@
         "station_code": "Keikyu.Main.Heiwajima",
         "short_code": "KK08"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "2700110",
@@ -10443,7 +11211,9 @@
         "station_code": "Keikyu.Main.Omorimachi",
         "short_code": "KK09"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "2700111",
@@ -10465,7 +11235,9 @@
         "station_code": "Keikyu.Main.Umeyashiki",
         "short_code": "KK10"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "2700112",
@@ -10495,7 +11267,9 @@
         "station_code": "Keikyu.Airport.KeikyuKamata",
         "short_code": "KK11"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 13.0
   },
   {
     "station_group_code": "2700113",
@@ -10517,7 +11291,9 @@
         "station_code": "Keikyu.Main.Zoshiki",
         "short_code": "KK18"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "2700114",
@@ -10539,7 +11315,9 @@
         "station_code": "Keikyu.Main.Rokugodote",
         "short_code": "KK19"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "2700202",
@@ -10561,7 +11339,9 @@
         "station_code": "Keikyu.Airport.Kojiya",
         "short_code": "KK12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "2700203",
@@ -10583,7 +11363,9 @@
         "station_code": "Keikyu.Airport.Otorii",
         "short_code": "KK13"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "2700204",
@@ -10605,7 +11387,9 @@
         "station_code": "Keikyu.Airport.AnamoriInari",
         "short_code": "KK14"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "2700205",
@@ -10635,7 +11419,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "2700206",
@@ -10665,7 +11451,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "2700207",
@@ -10695,7 +11483,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 14.0
   },
   {
     "station_group_code": "2800102",
@@ -10717,7 +11507,9 @@
         "station_code": "TokyoMetro.Ginza.Tawaramachi",
         "short_code": "G18"
       }
-    ]
+    ],
+    "depth_m": 8.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "2800103",
@@ -10739,7 +11531,9 @@
         "station_code": "TokyoMetro.Ginza.Inaricho",
         "short_code": "G17"
       }
-    ]
+    ],
+    "depth_m": 8.0,
+    "station_elevation_m": 1.0
   },
   {
     "station_group_code": "2800106",
@@ -10761,7 +11555,9 @@
         "station_code": "TokyoMetro.Ginza.Suehirocho",
         "short_code": "G14"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "2800109",
@@ -10799,7 +11595,9 @@
         "station_code": "Toei.Asakusa.Nihombashi",
         "short_code": "A-13"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "2800110",
@@ -10829,7 +11627,9 @@
         "station_code": "Toei.Asakusa.Takaracho",
         "short_code": "A-12"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": 16.0
   },
   {
     "station_group_code": "2800111",
@@ -10867,7 +11667,9 @@
         "station_code": "TokyoMetro.Ginza.Ginza",
         "short_code": "G09"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "2800113",
@@ -10889,7 +11691,9 @@
         "station_code": "TokyoMetro.Ginza.Toranomon",
         "short_code": "G07"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "2800114",
@@ -10919,7 +11723,9 @@
         "station_code": "TokyoMetro.Ginza.TameikeSanno",
         "short_code": "G06"
       }
-    ]
+    ],
+    "depth_m": 35.5,
+    "station_elevation_m": -11.5
   },
   {
     "station_group_code": "2800115",
@@ -10973,7 +11779,9 @@
         "station_code": "TokyoMetro.Ginza.AkasakaMitsuke",
         "short_code": "G05"
       }
-    ]
+    ],
+    "depth_m": 36.0,
+    "station_elevation_m": -8.0
   },
   {
     "station_group_code": "2800116",
@@ -11011,7 +11819,9 @@
         "station_code": "Toei.Oedo.AoyamaItchome",
         "short_code": "E-24"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": 22.0
   },
   {
     "station_group_code": "2800117",
@@ -11033,7 +11843,9 @@
         "station_code": "TokyoMetro.Ginza.Gaiemmae",
         "short_code": "G03"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": 32.0
   },
   {
     "station_group_code": "2800118",
@@ -11071,7 +11883,9 @@
         "station_code": "TokyoMetro.Ginza.OmoteSando",
         "short_code": "G02"
       }
-    ]
+    ],
+    "depth_m": 22.0,
+    "station_elevation_m": 18.0
   },
   {
     "station_group_code": "2800202",
@@ -11093,7 +11907,9 @@
         "station_code": "TokyoMetro.Marunouchi.ShinOtsuka",
         "short_code": "M24"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": 19.0
   },
   {
     "station_group_code": "2800203",
@@ -11115,7 +11931,9 @@
         "station_code": "TokyoMetro.Marunouchi.Myogadani",
         "short_code": "M23"
       }
-    ]
+    ],
+    "depth_m": 8.0,
+    "station_elevation_m": 29.0
   },
   {
     "station_group_code": "2800204",
@@ -11145,7 +11963,9 @@
         "station_code": "TokyoMetro.Namboku.Korakuen",
         "short_code": "N11"
       }
-    ]
+    ],
+    "depth_m": 37.5,
+    "station_elevation_m": -26.5
   },
   {
     "station_group_code": "2800205",
@@ -11175,7 +11995,9 @@
         "station_code": "Toei.Oedo.HongoSanchome",
         "short_code": "E-08"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": 18.0
   },
   {
     "station_group_code": "2800207",
@@ -11205,7 +12027,9 @@
         "station_code": "Toei.Shinjuku.Ogawamachi",
         "short_code": "S-07"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": 12.0
   },
   {
     "station_group_code": "2800208",
@@ -11259,7 +12083,9 @@
         "station_code": "Toei.Mita.Otemachi",
         "short_code": "I-09"
       }
-    ]
+    ],
+    "depth_m": 20.0,
+    "station_elevation_m": 11.0
   },
   {
     "station_group_code": "2800211",
@@ -11297,7 +12123,9 @@
         "station_code": "TokyoMetro.Hibiya.Kasumigaseki",
         "short_code": "H06"
       }
-    ]
+    ],
+    "depth_m": 28.0,
+    "station_elevation_m": -14.0
   },
   {
     "station_group_code": "2800212",
@@ -11327,7 +12155,9 @@
         "station_code": "TokyoMetro.Chiyoda.KokkaiGijidomae",
         "short_code": "C07"
       }
-    ]
+    ],
+    "depth_m": 20.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "2800215",
@@ -11349,7 +12179,9 @@
         "station_code": "TokyoMetro.Marunouchi.YotsuyaSanchome",
         "short_code": "M11"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": 29.0
   },
   {
     "station_group_code": "2800216",
@@ -11371,7 +12203,9 @@
         "station_code": "TokyoMetro.Marunouchi.ShinjukuGyoemmae",
         "short_code": "M10"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": 30.0
   },
   {
     "station_group_code": "2800217",
@@ -11409,7 +12243,9 @@
         "station_code": "Toei.Shinjuku.ShinjukuSanchome",
         "short_code": "S-02"
       }
-    ]
+    ],
+    "depth_m": 25.0,
+    "station_elevation_m": 37.0
   },
   {
     "station_group_code": "2800219",
@@ -11431,7 +12267,9 @@
         "station_code": "TokyoMetro.Marunouchi.NishiShinjuku",
         "short_code": "M07"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": 29.0
   },
   {
     "station_group_code": "2800220",
@@ -11469,7 +12307,9 @@
         "station_code": "Toei.Oedo.NakanoSakaue",
         "short_code": "E-30"
       }
-    ]
+    ],
+    "depth_m": 16.0,
+    "station_elevation_m": 20.0
   },
   {
     "station_group_code": "2800221",
@@ -11491,7 +12331,9 @@
         "station_code": "TokyoMetro.Marunouchi.ShinNakano",
         "short_code": "M05"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": 29.0
   },
   {
     "station_group_code": "2800222",
@@ -11513,7 +12355,9 @@
         "station_code": "TokyoMetro.Marunouchi.HigashiKoenji",
         "short_code": "M04"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": 32.0
   },
   {
     "station_group_code": "2800223",
@@ -11535,7 +12379,9 @@
         "station_code": "TokyoMetro.Marunouchi.ShinKoenji",
         "short_code": "M03"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": 35.0
   },
   {
     "station_group_code": "2800224",
@@ -11557,7 +12403,9 @@
         "station_code": "TokyoMetro.Marunouchi.MinamiAsagaya",
         "short_code": "M02"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": 37.0
   },
   {
     "station_group_code": "2800226",
@@ -11579,7 +12427,9 @@
         "station_code": "TokyoMetro.MarunouchiBranch.NakanoShimbashi",
         "short_code": "Mb05"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": 20.0
   },
   {
     "station_group_code": "2800227",
@@ -11601,7 +12451,9 @@
         "station_code": "TokyoMetro.MarunouchiBranch.NakanoFujimicho",
         "short_code": "Mb04"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": 24.0
   },
   {
     "station_group_code": "2800228",
@@ -11623,7 +12475,9 @@
         "station_code": "TokyoMetro.MarunouchiBranch.Honancho",
         "short_code": "Mb03"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": 31.0
   },
   {
     "station_group_code": "2800303",
@@ -11645,7 +12499,9 @@
         "station_code": "TokyoMetro.Hibiya.Minowa",
         "short_code": "H19"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": -1.0
   },
   {
     "station_group_code": "2800304",
@@ -11667,7 +12523,9 @@
         "station_code": "TokyoMetro.Hibiya.Iriya",
         "short_code": "H18"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": -4.0
   },
   {
     "station_group_code": "2800308",
@@ -11689,7 +12547,9 @@
         "station_code": "TokyoMetro.Hibiya.Kodemmacho",
         "short_code": "H14"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "2800309",
@@ -11719,7 +12579,9 @@
         "station_code": "Toei.Asakusa.Ningyocho",
         "short_code": "A-14"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "2800310",
@@ -11749,7 +12611,9 @@
         "station_code": "TokyoMetro.Tozai.Kayabacho",
         "short_code": "T11"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": 12.0
   },
   {
     "station_group_code": "2800312",
@@ -11771,7 +12635,9 @@
         "station_code": "TokyoMetro.Hibiya.Tsukiji",
         "short_code": "H10"
       }
-    ]
+    ],
+    "depth_m": 16,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "2800313",
@@ -11801,7 +12667,9 @@
         "station_code": "Toei.Asakusa.HigashiGinza",
         "short_code": "A-11"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": 25.0
   },
   {
     "station_group_code": "2800315",
@@ -11839,7 +12707,9 @@
         "station_code": "Toei.Mita.Hibiya",
         "short_code": "I-08"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": -5.0
   },
   {
     "station_group_code": "2800317",
@@ -11861,7 +12731,9 @@
         "station_code": "TokyoMetro.Hibiya.Kamiyacho",
         "short_code": "H05"
       }
-    ]
+    ],
+    "depth_m": 16.0,
+    "station_elevation_m": 20.0
   },
   {
     "station_group_code": "2800318",
@@ -11891,7 +12763,9 @@
         "station_code": "Toei.Oedo.Roppongi",
         "short_code": "E-23"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": 21.0
   },
   {
     "station_group_code": "2800319",
@@ -11913,7 +12787,9 @@
         "station_code": "TokyoMetro.Hibiya.HiroO",
         "short_code": "H03"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "2800402",
@@ -11935,7 +12811,9 @@
         "station_code": "TokyoMetro.Tozai.Ochiai",
         "short_code": "T02"
       }
-    ]
+    ],
+    "depth_m": 16.0,
+    "station_elevation_m": 17.0
   },
   {
     "station_group_code": "2800404",
@@ -11957,7 +12835,9 @@
         "station_code": "TokyoMetro.Tozai.Waseda",
         "short_code": "T04"
       }
-    ]
+    ],
+    "depth_m": 20.0,
+    "station_elevation_m": 2.0
   },
   {
     "station_group_code": "2800405",
@@ -11979,7 +12859,9 @@
         "station_code": "TokyoMetro.Tozai.Kagurazaka",
         "short_code": "T05"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "2800407",
@@ -12017,7 +12899,9 @@
         "station_code": "Toei.Shinjuku.Kudanshita",
         "short_code": "S-05"
       }
-    ]
+    ],
+    "depth_m": 20.0,
+    "station_elevation_m": -4.0
   },
   {
     "station_group_code": "2800408",
@@ -12039,7 +12923,9 @@
         "station_code": "TokyoMetro.Tozai.Takebashi",
         "short_code": "T08"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": -2.0
   },
   {
     "station_group_code": "2800412",
@@ -12069,7 +12955,9 @@
         "station_code": "Toei.Oedo.MonzenNakacho",
         "short_code": "E-15"
       }
-    ]
+    ],
+    "depth_m": 27.0,
+    "station_elevation_m": -18.0
   },
   {
     "station_group_code": "2800413",
@@ -12091,7 +12979,9 @@
         "station_code": "TokyoMetro.Tozai.Kiba",
         "short_code": "T13"
       }
-    ]
+    ],
+    "depth_m": 16.0,
+    "station_elevation_m": -9.0
   },
   {
     "station_group_code": "2800414",
@@ -12113,7 +13003,9 @@
         "station_code": "TokyoMetro.Tozai.Toyocho",
         "short_code": "T14"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": -10.0
   },
   {
     "station_group_code": "2800415",
@@ -12135,7 +13027,9 @@
         "station_code": "TokyoMetro.Tozai.MinamiSunamachi",
         "short_code": "T15"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": -11.0
   },
   {
     "station_group_code": "2800416",
@@ -12157,7 +13051,9 @@
         "station_code": "TokyoMetro.Tozai.NishiKasai",
         "short_code": "T16"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": -4.0
   },
   {
     "station_group_code": "2800417",
@@ -12179,7 +13075,9 @@
         "station_code": "TokyoMetro.Tozai.Kasai",
         "short_code": "T17"
       }
-    ]
+    ],
+    "depth_m": 8.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "2800501",
@@ -12201,7 +13099,9 @@
         "station_code": "TokyoMetro.Chiyoda.KitaAyase",
         "short_code": "C20"
       }
-    ]
+    ],
+    "depth_m": 8.0,
+    "station_elevation_m": -5.0
   },
   {
     "station_group_code": "2800506",
@@ -12223,7 +13123,9 @@
         "station_code": "TokyoMetro.Chiyoda.Sendagi",
         "short_code": "C15"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": 2.0
   },
   {
     "station_group_code": "2800507",
@@ -12245,7 +13147,9 @@
         "station_code": "TokyoMetro.Chiyoda.Nezu",
         "short_code": "C14"
       }
-    ]
+    ],
+    "depth_m": 15.0,
+    "station_elevation_m": -2.0
   },
   {
     "station_group_code": "2800508",
@@ -12267,7 +13171,9 @@
         "station_code": "TokyoMetro.Chiyoda.Yushima",
         "short_code": "C13"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": -5.0
   },
   {
     "station_group_code": "2800511",
@@ -12289,7 +13195,9 @@
         "station_code": "TokyoMetro.Chiyoda.Nijubashimae",
         "short_code": "C10"
       }
-    ]
+    ],
+    "depth_m": 22,
+    "station_elevation_m": -9.0
   },
   {
     "station_group_code": "2800515",
@@ -12311,7 +13219,9 @@
         "station_code": "TokyoMetro.Chiyoda.Akasaka",
         "short_code": "C06"
       }
-    ]
+    ],
+    "depth_m": 26.0,
+    "station_elevation_m": -3.0
   },
   {
     "station_group_code": "2800516",
@@ -12333,7 +13243,9 @@
         "station_code": "TokyoMetro.Chiyoda.Nogizaka",
         "short_code": "C05"
       }
-    ]
+    ],
+    "depth_m": 21.0,
+    "station_elevation_m": 14.0
   },
   {
     "station_group_code": "2800604",
@@ -12363,7 +13275,9 @@
         "station_code": "TokyoMetro.Yurakucho.Heiwadai",
         "short_code": "Y04"
       }
-    ]
+    ],
+    "depth_m": 20.0,
+    "station_elevation_m": 19.0
   },
   {
     "station_group_code": "2800605",
@@ -12393,7 +13307,9 @@
         "station_code": "TokyoMetro.Yurakucho.Hikawadai",
         "short_code": "Y05"
       }
-    ]
+    ],
+    "depth_m": 20.0,
+    "station_elevation_m": 11.0
   },
   {
     "station_group_code": "2800607",
@@ -12423,7 +13339,9 @@
         "station_code": "TokyoMetro.Yurakucho.Senkawa",
         "short_code": "Y07"
       }
-    ]
+    ],
+    "depth_m": 20.0,
+    "station_elevation_m": 17.0
   },
   {
     "station_group_code": "2800608",
@@ -12453,7 +13371,9 @@
         "station_code": "TokyoMetro.Yurakucho.Kanamecho",
         "short_code": "Y08"
       }
-    ]
+    ],
+    "depth_m": 22.0,
+    "station_elevation_m": 11.0
   },
   {
     "station_group_code": "2800610",
@@ -12483,7 +13403,9 @@
         "station_code": "Toei.Arakawa.HigashiIkebukuroYonchome",
         "short_code": "SA-25"
       }
-    ]
+    ],
+    "depth_m": 30.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "2800611",
@@ -12505,7 +13427,9 @@
         "station_code": "TokyoMetro.Yurakucho.Gokokuji",
         "short_code": "Y11"
       }
-    ]
+    ],
+    "depth_m": 25.0,
+    "station_elevation_m": -5.0
   },
   {
     "station_group_code": "2800612",
@@ -12527,7 +13451,9 @@
         "station_code": "TokyoMetro.Yurakucho.Edogawabashi",
         "short_code": "Y12"
       }
-    ]
+    ],
+    "depth_m": 22.0,
+    "station_elevation_m": -7.0
   },
   {
     "station_group_code": "2800615",
@@ -12549,7 +13475,9 @@
         "station_code": "TokyoMetro.Yurakucho.Kojimachi",
         "short_code": "Y15"
       }
-    ]
+    ],
+    "depth_m": 22.0,
+    "station_elevation_m": 30.0
   },
   {
     "station_group_code": "2800617",
@@ -12571,7 +13499,9 @@
         "station_code": "TokyoMetro.Yurakucho.Sakuradamon",
         "short_code": "Y17"
       }
-    ]
+    ],
+    "depth_m": 20.0,
+    "station_elevation_m": -7.0
   },
   {
     "station_group_code": "2800619",
@@ -12593,7 +13523,9 @@
         "station_code": "TokyoMetro.Yurakucho.GinzaItchome",
         "short_code": "Y19"
       }
-    ]
+    ],
+    "depth_m": 25,
+    "station_elevation_m": -5.0
   },
   {
     "station_group_code": "2800620",
@@ -12615,7 +13547,9 @@
         "station_code": "TokyoMetro.Yurakucho.Shintomicho",
         "short_code": "Y20"
       }
-    ]
+    ],
+    "depth_m": 25,
+    "station_elevation_m": -13.0
   },
   {
     "station_group_code": "2800621",
@@ -12645,7 +13579,9 @@
         "station_code": "Toei.Oedo.Tsukishima",
         "short_code": "E-16"
       }
-    ]
+    ],
+    "depth_m": 28.0,
+    "station_elevation_m": -21.0
   },
   {
     "station_group_code": "2800622",
@@ -12675,7 +13611,9 @@
         "station_code": "TokyoMetro.Yurakucho.Toyosu",
         "short_code": "Y22"
       }
-    ]
+    ],
+    "depth_m": 20.0,
+    "station_elevation_m": -16.0
   },
   {
     "station_group_code": "2800623",
@@ -12697,7 +13635,9 @@
         "station_code": "TokyoMetro.Yurakucho.Tatsumi",
         "short_code": "Y23"
       }
-    ]
+    ],
+    "depth_m": 22.0,
+    "station_elevation_m": -13.0
   },
   {
     "station_group_code": "2800805",
@@ -12719,7 +13659,9 @@
         "station_code": "TokyoMetro.Hanzomon.Hanzomon",
         "short_code": "Z05"
       }
-    ]
+    ],
+    "depth_m": 22.0,
+    "station_elevation_m": 22.0
   },
   {
     "station_group_code": "2800807",
@@ -12757,7 +13699,9 @@
         "station_code": "Toei.Shinjuku.Jimbocho",
         "short_code": "S-06"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": -9.0
   },
   {
     "station_group_code": "2800810",
@@ -12779,7 +13723,9 @@
         "station_code": "TokyoMetro.Hanzomon.Suitengumae",
         "short_code": "Z10"
       }
-    ]
+    ],
+    "depth_m": 24.0,
+    "station_elevation_m": -14.0
   },
   {
     "station_group_code": "2800811",
@@ -12809,7 +13755,9 @@
         "station_code": "Toei.Oedo.KiyosumiShirakawa",
         "short_code": "E-14"
       }
-    ]
+    ],
+    "depth_m": 26.0,
+    "station_elevation_m": -19.0
   },
   {
     "station_group_code": "2800814",
@@ -12839,7 +13787,9 @@
         "station_code": "Toei.Shinjuku.Sumiyoshi",
         "short_code": "S-13"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": -13.0
   },
   {
     "station_group_code": "2800901",
@@ -12869,7 +13819,9 @@
         "station_code": "TokyoMetro.Namboku.AkabaneIwabuchi",
         "short_code": "N19"
       }
-    ]
+    ],
+    "depth_m": 21.0,
+    "station_elevation_m": -16.0
   },
   {
     "station_group_code": "2800902",
@@ -12891,7 +13843,9 @@
         "station_code": "TokyoMetro.Namboku.Shimo",
         "short_code": "N18"
       }
-    ]
+    ],
+    "depth_m": 30,
+    "station_elevation_m": -25.0
   },
   {
     "station_group_code": "2800903",
@@ -12913,7 +13867,9 @@
         "station_code": "TokyoMetro.Namboku.OjiKamiya",
         "short_code": "N17"
       }
-    ]
+    ],
+    "depth_m": 30,
+    "station_elevation_m": -24.0
   },
   {
     "station_group_code": "2800905",
@@ -12935,7 +13891,9 @@
         "station_code": "TokyoMetro.Namboku.Nishigahara",
         "short_code": "N15"
       }
-    ]
+    ],
+    "depth_m": 30,
+    "station_elevation_m": -2.0
   },
   {
     "station_group_code": "2800907",
@@ -12957,7 +13915,9 @@
         "station_code": "TokyoMetro.Namboku.HonKomagome",
         "short_code": "N13"
       }
-    ]
+    ],
+    "depth_m": 30,
+    "station_elevation_m": 0.0
   },
   {
     "station_group_code": "2800908",
@@ -12979,7 +13939,9 @@
         "station_code": "TokyoMetro.Namboku.Todaimae",
         "short_code": "N12"
       }
-    ]
+    ],
+    "depth_m": 26.5,
+    "station_elevation_m": 0.5
   },
   {
     "station_group_code": "2800915",
@@ -13001,7 +13963,9 @@
         "station_code": "TokyoMetro.Namboku.RoppongiItchome",
         "short_code": "N05"
       }
-    ]
+    ],
+    "depth_m": 30,
+    "station_elevation_m": -9.0
   },
   {
     "station_group_code": "2800916",
@@ -13031,7 +13995,9 @@
         "station_code": "Toei.Oedo.AzabuJuban",
         "short_code": "E-22"
       }
-    ]
+    ],
+    "depth_m": 32.3,
+    "station_elevation_m": -18.3
   },
   {
     "station_group_code": "2800917",
@@ -13061,7 +14027,9 @@
         "station_code": "Toei.Mita.ShirokaneTakanawa",
         "short_code": "I-03"
       }
-    ]
+    ],
+    "depth_m": 24.0,
+    "station_elevation_m": -10.0
   },
   {
     "station_group_code": "2800918",
@@ -13091,7 +14059,9 @@
         "station_code": "Toei.Mita.Shirokanedai",
         "short_code": "I-02"
       }
-    ]
+    ],
+    "depth_m": 28.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "2801010",
@@ -13121,7 +14091,9 @@
         "station_code": "Toei.Arakawa.Kishibojimmae",
         "short_code": "SA-27"
       }
-    ]
+    ],
+    "depth_m": 26.0,
+    "station_elevation_m": 10.0
   },
   {
     "station_group_code": "2801011",
@@ -13143,7 +14115,9 @@
         "station_code": "TokyoMetro.Fukutoshin.NishiWaseda",
         "short_code": "F11"
       }
-    ]
+    ],
+    "depth_m": 30.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "2801012",
@@ -13173,7 +14147,9 @@
         "station_code": "Toei.Oedo.HigashiShinjuku",
         "short_code": "E-02"
       }
-    ]
+    ],
+    "depth_m": 35.0,
+    "station_elevation_m": 0.0
   },
   {
     "station_group_code": "2801014",
@@ -13195,7 +14171,9 @@
         "station_code": "TokyoMetro.Fukutoshin.KitaSando",
         "short_code": "F14"
       }
-    ]
+    ],
+    "depth_m": 23.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9930101",
@@ -13217,7 +14195,9 @@
         "station_code": "Toei.Oedo.Tochomae",
         "short_code": "E-28"
       }
-    ]
+    ],
+    "depth_m": 34.2,
+    "station_elevation_m": 1.8
   },
   {
     "station_group_code": "9930102",
@@ -13239,7 +14219,9 @@
         "station_code": "Toei.Oedo.ShinjukuNishiguchi",
         "short_code": "E-01"
       }
-    ]
+    ],
+    "depth_m": 40,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "9930104",
@@ -13261,7 +14243,9 @@
         "station_code": "Toei.Oedo.WakamatsuKawada",
         "short_code": "E-03"
       }
-    ]
+    ],
+    "depth_m": 40,
+    "station_elevation_m": -1.0
   },
   {
     "station_group_code": "9930105",
@@ -13283,7 +14267,9 @@
         "station_code": "Toei.Oedo.UshigomeYanagicho",
         "short_code": "E-04"
       }
-    ]
+    ],
+    "depth_m": 40,
+    "station_elevation_m": -7.0
   },
   {
     "station_group_code": "9930106",
@@ -13305,7 +14291,9 @@
         "station_code": "Toei.Oedo.UshigomeKagurazaka",
         "short_code": "E-05"
       }
-    ]
+    ],
+    "depth_m": 40,
+    "station_elevation_m": -10.0
   },
   {
     "station_group_code": "9930108",
@@ -13335,7 +14323,9 @@
         "station_code": "Toei.Oedo.Kasuga",
         "short_code": "E-07"
       }
-    ]
+    ],
+    "depth_m": 35.4,
+    "station_elevation_m": -23.4
   },
   {
     "station_group_code": "9930111",
@@ -13365,7 +14355,9 @@
         "station_code": "Toei.Oedo.ShinOkachimachi",
         "short_code": "E-10"
       }
-    ]
+    ],
+    "depth_m": 25.0,
+    "station_elevation_m": -16.0
   },
   {
     "station_group_code": "9930112",
@@ -13395,7 +14387,9 @@
         "station_code": "Toei.Asakusa.Kuramae",
         "short_code": "A-17"
       }
-    ]
+    ],
+    "depth_m": 33.5,
+    "station_elevation_m": -3.5
   },
   {
     "station_group_code": "9930114",
@@ -13425,7 +14419,9 @@
         "station_code": "Toei.Shinjuku.Morishita",
         "short_code": "S-11"
       }
-    ]
+    ],
+    "depth_m": 16.0,
+    "station_elevation_m": -10.0
   },
   {
     "station_group_code": "9930118",
@@ -13447,7 +14443,9 @@
         "station_code": "Toei.Oedo.Kachidoki",
         "short_code": "E-17"
       }
-    ]
+    ],
+    "depth_m": 31.0,
+    "station_elevation_m": -25.0
   },
   {
     "station_group_code": "9930119",
@@ -13469,7 +14467,9 @@
         "station_code": "Toei.Oedo.Tsukijishijo",
         "short_code": "E-18"
       }
-    ]
+    ],
+    "depth_m": 28.0,
+    "station_elevation_m": -23.0
   },
   {
     "station_group_code": "9930120",
@@ -13499,7 +14499,9 @@
         "station_code": "Toei.Oedo.Shiodome",
         "short_code": "E-19"
       }
-    ]
+    ],
+    "depth_m": 30.5,
+    "station_elevation_m": -28.5
   },
   {
     "station_group_code": "9930121",
@@ -13529,7 +14531,9 @@
         "station_code": "Toei.Asakusa.Daimon",
         "short_code": "A-09"
       }
-    ]
+    ],
+    "depth_m": 28.6,
+    "station_elevation_m": -11.6
   },
   {
     "station_group_code": "9930122",
@@ -13551,7 +14555,9 @@
         "station_code": "Toei.Oedo.Akabanebashi",
         "short_code": "E-21"
       }
-    ]
+    ],
+    "depth_m": 40,
+    "station_elevation_m": -29.0
   },
   {
     "station_group_code": "9930126",
@@ -13573,7 +14579,9 @@
         "station_code": "Toei.Oedo.KokuritsuKyogijo",
         "short_code": "E-25"
       }
-    ]
+    ],
+    "depth_m": 36.0,
+    "station_elevation_m": -4.0
   },
   {
     "station_group_code": "9930129",
@@ -13595,7 +14603,9 @@
         "station_code": "Toei.Oedo.NishiShinjukuGochome",
         "short_code": "E-29"
       }
-    ]
+    ],
+    "depth_m": 40,
+    "station_elevation_m": -8.0
   },
   {
     "station_group_code": "9930133",
@@ -13617,7 +14627,9 @@
         "station_code": "Toei.Oedo.OchiaiMinamiNagasaki",
         "short_code": "E-33"
       }
-    ]
+    ],
+    "depth_m": 36.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "9930134",
@@ -13639,7 +14651,9 @@
         "station_code": "Toei.Oedo.ShinEgota",
         "short_code": "E-34"
       }
-    ]
+    ],
+    "depth_m": 40,
+    "station_elevation_m": 1.0
   },
   {
     "station_group_code": "9930137",
@@ -13661,7 +14675,9 @@
         "station_code": "Toei.Oedo.NerimaKasugacho",
         "short_code": "E-37"
       }
-    ]
+    ],
+    "depth_m": 40,
+    "station_elevation_m": 2.0
   },
   {
     "station_group_code": "9930138",
@@ -13683,7 +14699,9 @@
         "station_code": "Toei.Oedo.Hikarigaoka",
         "short_code": "E-38"
       }
-    ]
+    ],
+    "depth_m": 27.5,
+    "station_elevation_m": 22.5
   },
   {
     "station_group_code": "9930201",
@@ -13705,7 +14723,9 @@
         "station_code": "Toei.Asakusa.NishiMagome",
         "short_code": "A-01"
       }
-    ]
+    ],
+    "depth_m": 15.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9930202",
@@ -13727,7 +14747,9 @@
         "station_code": "Toei.Asakusa.Magome",
         "short_code": "A-02"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "9930206",
@@ -13749,7 +14771,9 @@
         "station_code": "Toei.Asakusa.Takanawadai",
         "short_code": "A-06"
       }
-    ]
+    ],
+    "depth_m": 26.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9930208",
@@ -13779,7 +14803,9 @@
         "station_code": "Toei.Asakusa.Mita",
         "short_code": "A-08"
       }
-    ]
+    ],
+    "depth_m": 20.0,
+    "station_elevation_m": -5.0
   },
   {
     "station_group_code": "9930219",
@@ -13801,7 +14827,9 @@
         "station_code": "Toei.Asakusa.HonjoAzumabashi",
         "short_code": "A-19"
       }
-    ]
+    ],
+    "depth_m": 16,
+    "station_elevation_m": -11.0
   },
   {
     "station_group_code": "9930305",
@@ -13823,7 +14851,9 @@
         "station_code": "Toei.Mita.Shibakoen",
         "short_code": "I-05"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": -6.0
   },
   {
     "station_group_code": "9930306",
@@ -13845,7 +14875,9 @@
         "station_code": "Toei.Mita.Onarimon",
         "short_code": "I-06"
       }
-    ]
+    ],
+    "depth_m": 16.0,
+    "station_elevation_m": -1.0
   },
   {
     "station_group_code": "9930307",
@@ -13867,7 +14899,9 @@
         "station_code": "Toei.Mita.Uchisaiwaicho",
         "short_code": "I-07"
       }
-    ]
+    ],
+    "depth_m": 16.0,
+    "station_elevation_m": -2.0
   },
   {
     "station_group_code": "9930313",
@@ -13889,7 +14923,9 @@
         "station_code": "Toei.Mita.Hakusan",
         "short_code": "I-13"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": 1.0
   },
   {
     "station_group_code": "9930314",
@@ -13911,7 +14947,9 @@
         "station_code": "Toei.Mita.Sengoku",
         "short_code": "I-14"
       }
-    ]
+    ],
+    "depth_m": 16.0,
+    "station_elevation_m": 14.0
   },
   {
     "station_group_code": "9930316",
@@ -13933,7 +14971,9 @@
         "station_code": "Toei.Mita.NishiSugamo",
         "short_code": "I-16"
       }
-    ]
+    ],
+    "depth_m": 22,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9930317",
@@ -13955,7 +14995,9 @@
         "station_code": "Toei.Mita.ShinItabashi",
         "short_code": "I-17"
       }
-    ]
+    ],
+    "depth_m": 22,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9930318",
@@ -13977,7 +15019,9 @@
         "station_code": "Toei.Mita.ItabashiKuyakushomae",
         "short_code": "I-18"
       }
-    ]
+    ],
+    "depth_m": 22,
+    "station_elevation_m": 12.0
   },
   {
     "station_group_code": "9930319",
@@ -13999,7 +15043,9 @@
         "station_code": "Toei.Mita.Itabashihoncho",
         "short_code": "I-19"
       }
-    ]
+    ],
+    "depth_m": 22,
+    "station_elevation_m": 10.0
   },
   {
     "station_group_code": "9930320",
@@ -14021,7 +15067,9 @@
         "station_code": "Toei.Mita.Motohasunuma",
         "short_code": "I-20"
       }
-    ]
+    ],
+    "depth_m": 15.0,
+    "station_elevation_m": 12.0
   },
   {
     "station_group_code": "9930321",
@@ -14043,7 +15091,9 @@
         "station_code": "Toei.Mita.ShimuraSakaue",
         "short_code": "I-21"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": 17.0
   },
   {
     "station_group_code": "9930322",
@@ -14065,7 +15115,9 @@
         "station_code": "Toei.Mita.ShimuraSanchome",
         "short_code": "I-22"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": -1.0
   },
   {
     "station_group_code": "9930323",
@@ -14087,7 +15139,9 @@
         "station_code": "Toei.Mita.Hasune",
         "short_code": "I-23"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": -4.0
   },
   {
     "station_group_code": "9930324",
@@ -14109,7 +15163,9 @@
         "station_code": "Toei.Mita.Nishidai",
         "short_code": "I-24"
       }
-    ]
+    ],
+    "depth_m": 10.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "9930325",
@@ -14131,7 +15187,9 @@
         "station_code": "Toei.Mita.Takashimadaira",
         "short_code": "I-25"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 11.0
   },
   {
     "station_group_code": "9930326",
@@ -14153,7 +15211,9 @@
         "station_code": "Toei.Mita.ShinTakashimadaira",
         "short_code": "I-26"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9930327",
@@ -14175,7 +15235,9 @@
         "station_code": "Toei.Mita.NishiTakashimadaira",
         "short_code": "I-27"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "9930403",
@@ -14197,7 +15259,9 @@
         "station_code": "Toei.Shinjuku.Akebonobashi",
         "short_code": "S-03"
       }
-    ]
+    ],
+    "depth_m": 22.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "9930408",
@@ -14219,7 +15283,9 @@
         "station_code": "Toei.Shinjuku.Iwamotocho",
         "short_code": "S-08"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": 2.0
   },
   {
     "station_group_code": "9930410",
@@ -14241,7 +15307,9 @@
         "station_code": "Toei.Shinjuku.Hamacho",
         "short_code": "S-10"
       }
-    ]
+    ],
+    "depth_m": 18.0,
+    "station_elevation_m": -5.0
   },
   {
     "station_group_code": "9930412",
@@ -14263,7 +15331,9 @@
         "station_code": "Toei.Shinjuku.Kikukawa",
         "short_code": "S-12"
       }
-    ]
+    ],
+    "depth_m": 16.0,
+    "station_elevation_m": -11.0
   },
   {
     "station_group_code": "9930414",
@@ -14285,7 +15355,9 @@
         "station_code": "Toei.Shinjuku.NishiOjima",
         "short_code": "S-14"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": -10.0
   },
   {
     "station_group_code": "9930415",
@@ -14307,7 +15379,9 @@
         "station_code": "Toei.Shinjuku.Ojima",
         "short_code": "S-15"
       }
-    ]
+    ],
+    "depth_m": 12.0,
+    "station_elevation_m": -9.0
   },
   {
     "station_group_code": "9930416",
@@ -14329,7 +15403,9 @@
         "station_code": "Toei.Shinjuku.HigashiOjima",
         "short_code": "S-16"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 1.0
   },
   {
     "station_group_code": "9930417",
@@ -14351,7 +15427,9 @@
         "station_code": "Toei.Shinjuku.Funabori",
         "short_code": "S-17"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 9.0
   },
   {
     "station_group_code": "9930418",
@@ -14373,7 +15451,9 @@
         "station_code": "Toei.Shinjuku.Ichinoe",
         "short_code": "S-18"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": -10.0
   },
   {
     "station_group_code": "9930419",
@@ -14395,7 +15475,9 @@
         "station_code": "Toei.Shinjuku.Mizue",
         "short_code": "S-19"
       }
-    ]
+    ],
+    "depth_m": 14.0,
+    "station_elevation_m": -3.0
   },
   {
     "station_group_code": "9930420",
@@ -14417,7 +15499,9 @@
         "station_code": "Toei.Shinjuku.Shinozaki",
         "short_code": "S-20"
       }
-    ]
+    ],
+    "depth_m": 16.0,
+    "station_elevation_m": -9.0
   },
   {
     "station_group_code": "9930501",
@@ -14439,7 +15523,9 @@
         "station_code": "Toei.Arakawa.Minowabashi",
         "short_code": "SA-01"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "9930502",
@@ -14461,7 +15547,9 @@
         "station_code": "Toei.Arakawa.ArakawaItchumae",
         "short_code": "SA-02"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "9930503",
@@ -14483,7 +15571,9 @@
         "station_code": "Toei.Arakawa.Arakawakuyakushomae",
         "short_code": "SA-03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "9930504",
@@ -14505,7 +15595,9 @@
         "station_code": "Toei.Arakawa.ArakawaNichome",
         "short_code": "SA-04"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "9930505",
@@ -14527,7 +15619,9 @@
         "station_code": "Toei.Arakawa.ArakawaNanachome",
         "short_code": "SA-05"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "9930507",
@@ -14549,7 +15643,9 @@
         "station_code": "Toei.Arakawa.MachiyaNichome",
         "short_code": "SA-07"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "9930508",
@@ -14571,7 +15667,9 @@
         "station_code": "Toei.Arakawa.HigashiOguSanchome",
         "short_code": "SA-08"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "9930509",
@@ -14601,7 +15699,9 @@
         "station_code": "Toei.Arakawa.Kumanomae",
         "short_code": "SA-09"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "9930510",
@@ -14623,7 +15723,9 @@
         "station_code": "Toei.Arakawa.Miyanomae",
         "short_code": "SA-10"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "9930511",
@@ -14645,7 +15747,9 @@
         "station_code": "Toei.Arakawa.Odai",
         "short_code": "SA-11"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9930512",
@@ -14667,7 +15771,9 @@
         "station_code": "Toei.Arakawa.ArakawaYuenchimae",
         "short_code": "SA-12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "9930513",
@@ -14689,7 +15795,9 @@
         "station_code": "Toei.Arakawa.ArakawaShakomae",
         "short_code": "SA-13"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "9930514",
@@ -14711,7 +15819,9 @@
         "station_code": "Toei.Arakawa.Kajiwara",
         "short_code": "SA-14"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9930515",
@@ -14733,7 +15843,9 @@
         "station_code": "Toei.Arakawa.Sakaecho",
         "short_code": "SA-15"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9930517",
@@ -14755,7 +15867,9 @@
         "station_code": "Toei.Arakawa.Asukayama",
         "short_code": "SA-17"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 19.0
   },
   {
     "station_group_code": "9930518",
@@ -14777,7 +15891,9 @@
         "station_code": "Toei.Arakawa.TakinogawaItchome",
         "short_code": "SA-18"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 25.0
   },
   {
     "station_group_code": "9930519",
@@ -14799,7 +15915,9 @@
         "station_code": "Toei.Arakawa.NishigaharaYonchome",
         "short_code": "SA-19"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 29.0
   },
   {
     "station_group_code": "9930520",
@@ -14821,7 +15939,9 @@
         "station_code": "Toei.Arakawa.ShinKoshinzuka",
         "short_code": "SA-20"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 29.0
   },
   {
     "station_group_code": "9930521",
@@ -14843,7 +15963,9 @@
         "station_code": "Toei.Arakawa.Koshinzuka",
         "short_code": "SA-21"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 31.0
   },
   {
     "station_group_code": "9930522",
@@ -14865,7 +15987,9 @@
         "station_code": "Toei.Arakawa.Sugamoshinden",
         "short_code": "SA-22"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 22.0
   },
   {
     "station_group_code": "9930524",
@@ -14887,7 +16011,9 @@
         "station_code": "Toei.Arakawa.Mukohara",
         "short_code": "SA-24"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 34.0
   },
   {
     "station_group_code": "9930526",
@@ -14909,7 +16035,9 @@
         "station_code": "Toei.Arakawa.TodenZoshigaya",
         "short_code": "SA-26"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 35.0
   },
   {
     "station_group_code": "9930528",
@@ -14931,7 +16059,9 @@
         "station_code": "Toei.Arakawa.Gakushuinshita",
         "short_code": "SA-28"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 18.0
   },
   {
     "station_group_code": "9930529",
@@ -14953,7 +16083,9 @@
         "station_code": "Toei.Arakawa.Omokagebashi",
         "short_code": "SA-29"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 13.0
   },
   {
     "station_group_code": "9930530",
@@ -14975,7 +16107,9 @@
         "station_code": "Toei.Arakawa.Waseda",
         "short_code": "SA-30"
       }
-    ]
+    ],
+    "depth_m": 20.0,
+    "station_elevation_m": -7.0
   },
   {
     "station_group_code": "9930903",
@@ -14997,7 +16131,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 8.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "9930906",
@@ -15019,7 +16155,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 1.0
   },
   {
     "station_group_code": "9930907",
@@ -15041,7 +16179,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 3.0
   },
   {
     "station_group_code": "9931103",
@@ -15063,7 +16203,9 @@
         "station_code": "Yurikamome.Yurikamome.Takeshiba",
         "short_code": "U3"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "9931104",
@@ -15085,7 +16227,9 @@
         "station_code": "Yurikamome.Yurikamome.Hinode",
         "short_code": "U4"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 14.0
   },
   {
     "station_group_code": "9931105",
@@ -15107,7 +16251,9 @@
         "station_code": "Yurikamome.Yurikamome.ShibauraFuto",
         "short_code": "U5"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 12.0
   },
   {
     "station_group_code": "9931106",
@@ -15129,7 +16275,9 @@
         "station_code": "Yurikamome.Yurikamome.OdaibaKaihinkoen",
         "short_code": "U6"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 13.0
   },
   {
     "station_group_code": "9931107",
@@ -15151,7 +16299,9 @@
         "station_code": "Yurikamome.Yurikamome.Daiba",
         "short_code": "U7"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 11.0
   },
   {
     "station_group_code": "9931108",
@@ -15173,7 +16323,9 @@
         "station_code": "Yurikamome.Yurikamome.FuneNoKagakukan",
         "short_code": "U8"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "9931109",
@@ -15195,7 +16347,9 @@
         "station_code": "Yurikamome.Yurikamome.TelecomCenter",
         "short_code": "U9"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 14.0
   },
   {
     "station_group_code": "9931110",
@@ -15217,7 +16371,9 @@
         "station_code": "Yurikamome.Yurikamome.Aomi",
         "short_code": "U10"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 21.0
   },
   {
     "station_group_code": "9931111",
@@ -15239,7 +16395,9 @@
         "station_code": "Yurikamome.Yurikamome.KokusaiTenjijoSeimon",
         "short_code": "U11"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 40.0
   },
   {
     "station_group_code": "9931112",
@@ -15261,7 +16419,9 @@
         "station_code": "Yurikamome.Yurikamome.Ariake",
         "short_code": "U12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "9931113",
@@ -15283,7 +16443,9 @@
         "station_code": "Yurikamome.Yurikamome.AriakeTennisNoMori",
         "short_code": "U13"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9931114",
@@ -15305,7 +16467,9 @@
         "station_code": "Yurikamome.Yurikamome.ShijoMae",
         "short_code": "U14"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "9931115",
@@ -15327,7 +16491,9 @@
         "station_code": "Yurikamome.Yurikamome.ShinToyosu",
         "short_code": "U15"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9933402",
@@ -15349,7 +16515,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 100.0
   },
   {
     "station_group_code": "9933403",
@@ -15371,7 +16539,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 76.0
   },
   {
     "station_group_code": "9933404",
@@ -15393,7 +16563,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 118.0
   },
   {
     "station_group_code": "9933406",
@@ -15415,7 +16587,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 84.0
   },
   {
     "station_group_code": "9933408",
@@ -15437,7 +16611,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 68.0
   },
   {
     "station_group_code": "9933409",
@@ -15459,7 +16635,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 72.0
   },
   {
     "station_group_code": "9933410",
@@ -15481,7 +16659,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 79.0
   },
   {
     "station_group_code": "9933411",
@@ -15503,7 +16683,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 95.0
   },
   {
     "station_group_code": "9933412",
@@ -15525,7 +16707,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 93.0
   },
   {
     "station_group_code": "9933413",
@@ -15547,7 +16731,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 91.0
   },
   {
     "station_group_code": "9933414",
@@ -15569,7 +16755,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 93.0
   },
   {
     "station_group_code": "9933415",
@@ -15591,7 +16779,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 97.0
   },
   {
     "station_group_code": "9933416",
@@ -15613,7 +16803,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 97.0
   },
   {
     "station_group_code": "9933418",
@@ -15635,7 +16827,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 107.0
   },
   {
     "station_group_code": "9933419",
@@ -15657,7 +16851,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 108.0
   },
   {
     "station_group_code": "9933602",
@@ -15687,7 +16883,9 @@
         "station_code": "TWR.Rinkai.TennozuIsle",
         "short_code": "R5"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 11.0
   },
   {
     "station_group_code": "9933603",
@@ -15709,7 +16907,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "9933604",
@@ -15731,7 +16931,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "9933605",
@@ -15753,7 +16955,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "9933606",
@@ -15775,7 +16979,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 2.0
   },
   {
     "station_group_code": "9933608",
@@ -15797,7 +17003,9 @@
         "station_code": null,
         "short_code": null
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "9933702",
@@ -15819,7 +17027,9 @@
         "station_code": "TWR.Rinkai.Shinonome",
         "short_code": "R2"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "9933703",
@@ -15841,7 +17051,9 @@
         "station_code": "TWR.Rinkai.KokusaiTenjijo",
         "short_code": "R3"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "9933704",
@@ -15863,7 +17075,9 @@
         "station_code": "TWR.Rinkai.TokyoTeleport",
         "short_code": "R4"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 6.0
   },
   {
     "station_group_code": "9933706",
@@ -15885,7 +17099,9 @@
         "station_code": "TWR.Rinkai.ShinagawaSeaside",
         "short_code": "R6"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "9934002",
@@ -15907,7 +17123,9 @@
         "station_code": "Hokuso.Hokuso.ShinShibamata",
         "short_code": "HS01"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "9934203",
@@ -15929,7 +17147,9 @@
         "station_code": "Toei.NipporiToneri.AkadoShogakkomae",
         "short_code": "NT-03"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "9934205",
@@ -15951,7 +17171,9 @@
         "station_code": "Toei.NipporiToneri.AdachiOdai",
         "short_code": "NT-05"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 12.0
   },
   {
     "station_group_code": "9934206",
@@ -15973,7 +17195,9 @@
         "station_code": "Toei.NipporiToneri.OgiOhashi",
         "short_code": "NT-06"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 5.0
   },
   {
     "station_group_code": "9934207",
@@ -15995,7 +17219,9 @@
         "station_code": "Toei.NipporiToneri.Koya",
         "short_code": "NT-07"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 4.0
   },
   {
     "station_group_code": "9934208",
@@ -16017,7 +17243,9 @@
         "station_code": "Toei.NipporiToneri.Kohoku",
         "short_code": "NT-08"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9934209",
@@ -16039,7 +17267,9 @@
         "station_code": "Toei.NipporiToneri.NishiaraidaishiNishi",
         "short_code": "NT-09"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "9934210",
@@ -16061,7 +17291,9 @@
         "station_code": "Toei.NipporiToneri.Yazaike",
         "short_code": "NT-10"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "9934211",
@@ -16083,7 +17315,9 @@
         "station_code": "Toei.NipporiToneri.ToneriKoen",
         "short_code": "NT-11"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   },
   {
     "station_group_code": "9934212",
@@ -16105,7 +17339,9 @@
         "station_code": "Toei.NipporiToneri.Toneri",
         "short_code": "NT-12"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 8.0
   },
   {
     "station_group_code": "9934213",
@@ -16127,6 +17363,8 @@
         "station_code": "Toei.NipporiToneri.MinumadaiShinsuikoen",
         "short_code": "NT-13"
       }
-    ]
+    ],
+    "depth_m": 0.0,
+    "station_elevation_m": 7.0
   }
 ]
