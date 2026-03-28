@@ -152,8 +152,6 @@ export const LINE_NAMES: Record<string, string> = {
   "Keisei.Oshiage": "京成押上線",
 };
 
-export { LINE_COLORS };
-
 // Lines that form a loop (last station connects back to first)
 const LOOP_LINES = new Set([
   "JR-East.Yamanote",
