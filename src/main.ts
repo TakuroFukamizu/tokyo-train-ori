@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { FaceTracker } from "./faceTracker";
+import { loadStations } from "./stationRenderer";
 import "./style.css";
 
 // --- Sensitivity / smoothing (tweak these) ---
@@ -47,6 +48,9 @@ const oriMaterial = new THREE.LineBasicMaterial({ color: 0x00ffaa });
 const ori = new THREE.LineSegments(oriEdges, oriMaterial);
 ori.position.y = 1;
 scene.add(ori);
+
+// --- Stations (rendered inside ori) ---
+loadStations(ori);
 
 // --- UI ---
 const startBtn = document.getElementById("btn-start") as HTMLButtonElement;
