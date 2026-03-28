@@ -14,12 +14,12 @@ const { yMin: oriYMin, yMax: oriYMax } = computeOriYRange();
 const ORI_MARGIN = 0.12; // 12% margin above/below content
 const oriContentHeight = oriYMax - oriYMin;
 const oriHeight = oriContentHeight * (1 + ORI_MARGIN);
-const oriCenterY = (oriYMin + oriYMax) / 2; // center of content in local coords (= ori local space)
-// ori.position.y is chosen so that the cube's geometric center (local y=0) sits at world y = -oriCenterY + oriHeight/2
-// This makes the cube's top/bottom faces equidistant from the content's y extremes
-const ORI_POS_Y = -oriCenterY + oriHeight / 2;
-// world-space Y of ori's geometric center = ori.position.y (since local center is at y=0)
-const ORI_WORLD_CENTER_Y = ORI_POS_Y;
+const oriCenterY = (oriYMin + oriYMax) / 2; // center of content in ori local coords
+// ori.position.y places the box so its bottom is near world y=0
+// Box bottom in local space = oriCenterY - oriHeight/2 (after geometry translate)
+const ORI_POS_Y = -(oriCenterY - oriHeight / 2);
+// World-space Y of the content/box center = ori.position.y + oriCenterY
+const ORI_WORLD_CENTER_Y = ORI_POS_Y + oriCenterY;
 
 // --- Sensitivity / smoothing (tweak these) ---
 const SENSITIVITY_ROTATION = 2.0; // how much head angle affects camera
@@ -61,6 +61,8 @@ scene.add(grid);
 // --- Ori (wireframe cube) ---
 // oriHeight and oriCenterY are computed at the top of the file (before camera setup)
 const oriGeometry = new THREE.BoxGeometry(2, oriHeight, 2);
+// Shift box vertices so the visual box is centered on the content's Y center (not local y=0)
+oriGeometry.translate(0, oriCenterY, 0);
 const oriEdges = new THREE.EdgesGeometry(oriGeometry);
 const oriMaterial = new THREE.LineBasicMaterial({ color: 0x00ffaa });
 const ori = new THREE.LineSegments(oriEdges, oriMaterial);
