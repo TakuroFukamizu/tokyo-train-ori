@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import type { RailLine } from "./stationRenderer";
+import type { DelayManager } from "./delayManager";
 
 // --- Timetable types ---
 
@@ -60,6 +61,10 @@ const CONE_HEIGHT = 0.025;
 const CONE_SEGMENTS = 6;
 const POOL_SIZE = 800;
 const UP = new THREE.Vector3(0, 1, 0);
+
+const DELAY_SCALE = 1.5;
+const SHAKE_AMPLITUDE = 0.003;
+const SHAKE_FREQUENCY = 12;
 
 export class TrainRenderer {
   private lineMap = new Map<string, RailLine>();
@@ -124,7 +129,7 @@ export class TrainRenderer {
     }
   }
 
-  update(simTimeSec: number): void {
+  update(simTimeSec: number, delayManager?: DelayManager): void {
     // Despawn trains that have finished
     for (const [key, train] of this.active) {
       const lastDep = train.stops[train.stops.length - 1].departure_sec;
@@ -156,7 +161,19 @@ export class TrainRenderer {
 
           const active = this.active.get(key);
           if (active) {
-            this.updatePosition(active, simTimeSec);
+            this.updatePosition(active, simTimeSec, delayManager);
+            if (delayManager) {
+              const ratio = delayManager.getDelayRatio(lineCode, simTimeSec);
+              if (ratio > 0) {
+                const scale = 1 + (DELAY_SCALE - 1) * ratio;
+                active.mesh.scale.setScalar(scale);
+                const shake = Math.sin(simTimeSec * SHAKE_FREQUENCY) * SHAKE_AMPLITUDE * ratio;
+                active.mesh.position.x += shake;
+                active.mesh.position.z += shake * 0.7;
+              } else {
+                active.mesh.scale.setScalar(1);
+              }
+            }
           }
         }
       }
@@ -212,13 +229,19 @@ export class TrainRenderer {
     });
   }
 
-  private updatePosition(train: ActiveTrain, simTimeSec: number): void {
+  private updatePosition(train: ActiveTrain, simTimeSec: number, delayManager?: DelayManager): void {
     const { stops, posMap, mesh } = train;
 
-    // Find current segment: largest i where stops[i].departure_sec <= simTimeSec
+    let effectiveTime = simTimeSec;
+    if (delayManager) {
+      const delay = delayManager.getDelay(train.info.lineCode, simTimeSec);
+      effectiveTime = simTimeSec - delay;
+    }
+
+    // Find current segment: largest i where stops[i].departure_sec <= effectiveTime
     let segIdx = -1;
     for (let i = stops.length - 1; i >= 0; i--) {
-      if (stops[i].departure_sec <= simTimeSec) {
+      if (stops[i].departure_sec <= effectiveTime) {
         segIdx = i;
         break;
       }
@@ -247,7 +270,7 @@ export class TrainRenderer {
     // Linear interpolation
     const interval = stopB.departure_sec - stopA.departure_sec;
     const t = interval > 0
-      ? (simTimeSec - stopA.departure_sec) / interval
+      ? (effectiveTime - stopA.departure_sec) / interval
       : 0;
     mesh.position.lerpVectors(posA, posB, Math.max(0, Math.min(1, t)));
 

@@ -1,12 +1,14 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { FaceTracker } from "./faceTracker";
-import { fetchStations, renderStations, computeOriYRange } from "./stationRenderer";
+import { fetchStations, renderStations, computeOriYRange, LINE_NAMES, LINE_COLORS, type RailLine } from "./stationRenderer";
 import { TabSync } from "./tabSync";
 import { classifyLines, filterStations, getCategoriesForTab } from "./stationFilter";
 import { TrainRenderer } from "./trainRenderer";
 import { TimeController, type SpeedMultiplier } from "./timeController";
 import { WindowShakeDetector } from "./windowShakeDetector";
+import { DelayManager } from "./delayManager";
+import { DelayParticles } from "./delayParticles";
 import "./style.css";
 
 // --- Ori Y sizing (computed before camera setup so LOOK_AT can be set correctly) ---
@@ -89,6 +91,8 @@ ori.add(seaLevelLine);
 // --- Tab-aware station rendering ---
 const timeCtrl = new TimeController();
 const trainRenderer = new TrainRenderer();
+const delayManager = new DelayManager();
+const delayParticles = new DelayParticles(ori);
 let dataLoaded = false;
 const tabInfoEl = document.getElementById("tab-info") as HTMLDivElement;
 let tabSync: TabSync | null = null;
@@ -113,6 +117,9 @@ const tabLabels: Record<string, string> = {
         : filterStations(allStations, lineClassification, categories);
     const railLines = renderStations(stations, ori);
     await trainRenderer.load(ori, railLines);
+    delayManager.setRailLines(railLines);
+    delayParticles.setRailLines(railLines);
+    buildDelayPanel(railLines);
     dataLoaded = true;
 
     const categoryKey = categories === null ? "all" : [...categories].sort().join(",");
@@ -277,6 +284,67 @@ window.addEventListener("resize", () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
+// --- Delay panel ---
+const delayPanelToggle = document.getElementById("delay-panel-toggle") as HTMLButtonElement;
+const delayPanelList = document.getElementById("delay-panel-list") as HTMLDivElement;
+
+delayPanelToggle.addEventListener("click", () => {
+  delayPanelList.classList.toggle("open");
+});
+
+function buildDelayPanel(railLines: RailLine[]): void {
+  delayPanelList.innerHTML = "";
+  const sorted = [...railLines].sort((a, b) => {
+    const nameA = LINE_NAMES[a.lineCode] ?? a.lineCode;
+    const nameB = LINE_NAMES[b.lineCode] ?? b.lineCode;
+    return nameA.localeCompare(nameB, "ja");
+  });
+
+  for (const rl of sorted) {
+    const btn = document.createElement("button");
+    btn.className = "delay-line-btn";
+    btn.dataset.lineCode = rl.lineCode;
+
+    const dot = document.createElement("span");
+    dot.className = "delay-line-dot";
+    dot.style.backgroundColor = `#${rl.color.toString(16).padStart(6, "0")}`;
+
+    const label = document.createElement("span");
+    label.className = "delay-line-label";
+    label.textContent = LINE_NAMES[rl.lineCode] ?? rl.lineCode;
+
+    const status = document.createElement("span");
+    status.className = "delay-line-status";
+
+    btn.appendChild(dot);
+    btn.appendChild(label);
+    btn.appendChild(status);
+
+    btn.addEventListener("click", () => {
+      delayManager.triggerDelay(rl.lineCode, timeCtrl.currentTime);
+    });
+
+    delayPanelList.appendChild(btn);
+  }
+}
+
+function updateDelayPanelStatus(simTimeSec: number): void {
+  const buttons = delayPanelList.querySelectorAll(".delay-line-btn");
+  for (const btn of buttons) {
+    const lineCode = (btn as HTMLElement).dataset.lineCode!;
+    const delay = delayManager.getDelay(lineCode, simTimeSec);
+    const statusEl = btn.querySelector(".delay-line-status") as HTMLElement;
+    if (delay > 0) {
+      const mins = Math.ceil(delay / 60);
+      statusEl.textContent = `+${mins}分`;
+      btn.classList.add("delayed");
+    } else {
+      statusEl.textContent = "";
+      btn.classList.remove("delayed");
+    }
+  }
+}
+
 // --- Render loop ---
 let frameCount = 0;
 
@@ -286,12 +354,16 @@ function animate() {
   // Advance simulation clock and update trains (only after data is loaded)
   if (dataLoaded) {
     const simTime = timeCtrl.tick();
-    trainRenderer.update(simTime);
+    trainRenderer.update(simTime, delayManager);
+
+    const deltaSec = 1 / 60;
+    delayParticles.update(delayManager, simTime, deltaSec);
 
     // Update UI every 15 frames (~4 times/sec at 60fps)
     if (++frameCount % 15 === 0) {
       simTimeEl.textContent = timeCtrl.formatTime();
       trainCountEl.textContent = `${trainRenderer.activeCount} trains`;
+      updateDelayPanelStatus(simTime);
     }
   }
 
