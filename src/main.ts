@@ -73,6 +73,15 @@ ori.add(seaLevelLine);
 const timeCtrl = new TimeController();
 const trainRenderer = new TrainRenderer();
 let dataLoaded = false;
+const tabInfoEl = document.getElementById("tab-info") as HTMLDivElement;
+
+const tabLabels: Record<string, string> = {
+  all: "全路線",
+  "subway,inner": "23区内完結路線",
+  connecting: "接続路線",
+  subway: "地下鉄 (Metro/都営)",
+  inner: "JR・私鉄 (23区内)",
+};
 
 (async () => {
   const allStations = await fetchStations();
@@ -87,6 +96,10 @@ let dataLoaded = false;
     const railLines = renderStations(stations, ori);
     await trainRenderer.load(ori, railLines);
     dataLoaded = true;
+
+    const categoryKey = categories === null ? "all" : [...categories].sort().join(",");
+    const label = tabLabels[categoryKey] ?? categoryKey;
+    tabInfoEl.textContent = `Tab ${tabIndex + 1}/${tabCount} — ${label}`;
   }
 
   new TabSync((tabCount, tabIndex) => {
