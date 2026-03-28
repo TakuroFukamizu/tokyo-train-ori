@@ -2,6 +2,8 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { FaceTracker } from "./faceTracker";
 import { loadStations } from "./stationRenderer";
+import { TrainRenderer } from "./trainRenderer";
+import { TimeController, type SpeedMultiplier } from "./timeController";
 import "./style.css";
 
 // --- Sensitivity / smoothing (tweak these) ---
@@ -65,8 +67,17 @@ const seaLevelLine = new THREE.Line(
 );
 ori.add(seaLevelLine);
 
-// --- Stations (rendered inside ori) ---
-loadStations(ori);
+// --- Stations + Trains ---
+const timeCtrl = new TimeController();
+const trainRenderer = new TrainRenderer();
+let dataLoaded = false;
+
+async function initData() {
+  const railLines = await loadStations(ori);
+  await trainRenderer.load(ori, railLines);
+  dataLoaded = true;
+}
+initData();
 
 // --- UI ---
 const startBtn = document.getElementById("btn-start") as HTMLButtonElement;
@@ -157,6 +168,15 @@ previewBtn.addEventListener("click", () => {
   previewBtn.classList.toggle("active");
 });
 
+// --- Time controls ---
+const speedSelect = document.getElementById("speed-select") as HTMLSelectElement;
+const simTimeEl = document.getElementById("sim-time") as HTMLSpanElement;
+const trainCountEl = document.getElementById("train-count") as HTMLSpanElement;
+
+speedSelect.addEventListener("change", () => {
+  timeCtrl.setSpeed(Number(speedSelect.value) as SpeedMultiplier);
+});
+
 // --- Resize ---
 window.addEventListener("resize", () => {
   camera.aspect = window.innerWidth / window.innerHeight;
@@ -165,8 +185,22 @@ window.addEventListener("resize", () => {
 });
 
 // --- Render loop ---
+let frameCount = 0;
+
 function animate() {
   requestAnimationFrame(animate);
+
+  // Advance simulation clock and update trains (only after data is loaded)
+  if (dataLoaded) {
+    const simTime = timeCtrl.tick();
+    trainRenderer.update(simTime);
+
+    // Update UI every 15 frames (~4 times/sec at 60fps)
+    if (++frameCount % 15 === 0) {
+      simTimeEl.textContent = timeCtrl.formatTime();
+      trainCountEl.textContent = `${trainRenderer.activeCount} trains`;
+    }
+  }
 
   if (faceTracker.running) {
     // Smooth interpolation

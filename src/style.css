@@ -51,6 +51,41 @@ body {
   cursor: wait;
 }
 
+/* --- Time controls --- */
+#time-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 14px;
+}
+
+#sim-time {
+  font-family: "SF Mono", "Menlo", "Consolas", monospace;
+  font-size: 13px;
+  min-width: 5.5em;
+}
+
+#speed-select {
+  padding: 2px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#train-count {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
 /* --- Camera preview (PiP) --- */
 #preview-container {
   position: fixed;

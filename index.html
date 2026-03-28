@@ -12,6 +12,16 @@
     <div id="ui">
       <button id="btn-start">🎥 Start Face Tracking</button>
       <button id="btn-preview" title="Toggle camera preview">📷</button>
+      <div id="time-controls">
+        <span id="sim-time">00:00:00</span>
+        <select id="speed-select" title="Simulation speed">
+          <option value="1">1x</option>
+          <option value="2">2x</option>
+          <option value="5">5x</option>
+          <option value="10">10x</option>
+        </select>
+        <span id="train-count"></span>
+      </div>
     </div>
 
     <!-- Camera preview (PiP) -->
