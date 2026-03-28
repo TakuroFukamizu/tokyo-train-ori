@@ -75,6 +75,7 @@ const timeCtrl = new TimeController();
 const trainRenderer = new TrainRenderer();
 let dataLoaded = false;
 const tabInfoEl = document.getElementById("tab-info") as HTMLDivElement;
+let tabSync: TabSync | null = null;
 
 const tabLabels: Record<string, string> = {
   all: "全路線",
@@ -104,9 +105,15 @@ const tabLabels: Record<string, string> = {
     document.title = tabCount <= 1 ? "Ori Viewer" : `Ori Viewer — ${label}`;
   }
 
-  new TabSync((tabCount, tabIndex) => {
-    updateStations(tabCount, tabIndex);
-  });
+  tabSync = new TabSync(
+    (tabCount, tabIndex) => {
+      updateStations(tabCount, tabIndex);
+    },
+    (speed) => {
+      timeCtrl.setSpeed(speed as SpeedMultiplier);
+      speedSelect.value = String(speed);
+    }
+  );
 })();
 
 // --- UI ---
@@ -204,7 +211,9 @@ const simTimeEl = document.getElementById("sim-time") as HTMLSpanElement;
 const trainCountEl = document.getElementById("train-count") as HTMLSpanElement;
 
 speedSelect.addEventListener("change", () => {
-  timeCtrl.setSpeed(Number(speedSelect.value) as SpeedMultiplier);
+  const speed = Number(speedSelect.value) as SpeedMultiplier;
+  timeCtrl.setSpeed(speed);
+  tabSync?.broadcastSpeed(speed);
 });
 
 // --- Train click tooltip ---

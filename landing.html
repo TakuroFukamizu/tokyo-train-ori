@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>透景 — toukei</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400;700&family=DM+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0a0a0c;
+        --fg: #e8e6e1;
+        --dim: #5a5856;
+        --accent: #00ffaa;
+        --accent-dim: rgba(0, 255, 170, 0.12);
+        --line-metro: #149dd1;
+        --line-toei: #e85298;
+        --line-jr: #9acd32;
+        --line-private: #f15a22;
+        --serif: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+        --mono: "DM Mono", "SF Mono", "Menlo", monospace;
+      }
+
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 16px;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        font-family: var(--serif);
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* ============================================
+         HERO
+         ============================================ */
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      /* Animated grid background */
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 60px 60px;
+        mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 70%);
+        -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 20%, transparent 70%);
+        animation: grid-drift 20s linear infinite;
+      }
+
+      @keyframes grid-drift {
+        to { background-position: 60px 60px; }
+      }
+
+      /* Wireframe cube outline – pure CSS */
+      .hero-cube {
+        position: absolute;
+        width: 340px;
+        height: 340px;
+        transform-style: preserve-3d;
+        transform: rotateX(-20deg) rotateY(35deg);
+        animation: cube-rotate 40s linear infinite;
+        opacity: 0.08;
+      }
+
+      @keyframes cube-rotate {
+        to { transform: rotateX(-20deg) rotateY(395deg); }
+      }
+
+      .hero-cube .face {
+        position: absolute;
+        width: 340px;
+        height: 340px;
+        border: 1px solid var(--accent);
+      }
+
+      .hero-cube .face:nth-child(1) { transform: translateZ(170px); }
+      .hero-cube .face:nth-child(2) { transform: rotateY(180deg) translateZ(170px); }
+      .hero-cube .face:nth-child(3) { transform: rotateY(90deg) translateZ(170px); }
+      .hero-cube .face:nth-child(4) { transform: rotateY(-90deg) translateZ(170px); }
+      .hero-cube .face:nth-child(5) { transform: rotateX(90deg) translateZ(170px); }
+      .hero-cube .face:nth-child(6) { transform: rotateX(-90deg) translateZ(170px); }
+
+      /* Title cluster */
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+      }
+
+      .hero-title {
+        font-size: clamp(5rem, 14vw, 12rem);
+        font-weight: 200;
+        letter-spacing: 0.15em;
+        line-height: 1;
+        background: linear-gradient(
+          180deg,
+          var(--fg) 0%,
+          rgba(232, 230, 225, 0.4) 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: title-in 1.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+
+      @keyframes title-in {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+          filter: blur(8px);
+        }
+      }
+
+      .hero-romanize {
+        font-family: var(--mono);
+        font-size: clamp(0.75rem, 1.4vw, 1rem);
+        font-weight: 300;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        color: var(--dim);
+        animation: fade-up 1.6s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+
+      .hero-tagline {
+        max-width: 32ch;
+        font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+        font-weight: 400;
+        line-height: 2;
+        color: rgba(232, 230, 225, 0.55);
+        animation: fade-up 1.6s 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+
+      @keyframes fade-up {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+      }
+
+      .hero-cta {
+        margin-top: 2rem;
+        animation: fade-up 1.6s 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+
+      .hero-cta a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.9rem 2.4rem;
+        border: 1px solid rgba(0, 255, 170, 0.35);
+        border-radius: 2px;
+        color: var(--accent);
+        font-family: var(--mono);
+        font-size: 0.85rem;
+        font-weight: 400;
+        letter-spacing: 0.15em;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.35s ease;
+        background: var(--accent-dim);
+      }
+
+      .hero-cta a:hover {
+        background: rgba(0, 255, 170, 0.2);
+        border-color: var(--accent);
+        box-shadow: 0 0 30px rgba(0, 255, 170, 0.1);
+      }
+
+      .hero-cta a .arrow {
+        transition: transform 0.3s ease;
+      }
+
+      .hero-cta a:hover .arrow {
+        transform: translateX(4px);
+      }
+
+      .hero-scroll {
+        position: absolute;
+        bottom: 2.5rem;
+        font-family: var(--mono);
+        font-size: 0.7rem;
+        letter-spacing: 0.3em;
+        color: var(--dim);
+        animation: pulse-down 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse-down {
+        0%, 100% { transform: translateY(0); opacity: 0.5; }
+        50% { transform: translateY(6px); opacity: 1; }
+      }
+
+      /* ============================================
+         CONCEPT
+         ============================================ */
+      .concept {
+        padding: 10rem 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .concept::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 6rem;
+        width: 1px;
+        height: calc(100% - 12rem);
+        background: linear-gradient(to bottom, transparent, var(--dim), transparent);
+        opacity: 0.3;
+      }
+
+      .section-label {
+        font-family: var(--mono);
+        font-size: 0.7rem;
+        font-weight: 400;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 3rem;
+        opacity: 0.7;
+      }
+
+      .concept-title {
+        font-size: clamp(1.8rem, 4vw, 2.8rem);
+        font-weight: 200;
+        line-height: 1.8;
+        margin-bottom: 3rem;
+        letter-spacing: 0.05em;
+      }
+
+      .concept-title em {
+        font-style: normal;
+        color: var(--accent);
+        font-weight: 400;
+      }
+
+      .concept-body {
+        font-size: 0.95rem;
+        line-height: 2.2;
+        color: rgba(232, 230, 225, 0.6);
+        max-width: 60ch;
+      }
+
+      .concept-body p + p {
+        margin-top: 1.6rem;
+      }
+
+      /* ============================================
+         FEATURES
+         ============================================ */
+      .features {
+        padding: 8rem 2rem 10rem;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .features .section-label {
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2px;
+      }
+
+      .feature-card {
+        position: relative;
+        padding: 2.8rem 2.2rem;
+        background: rgba(255, 255, 255, 0.015);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        transition: all 0.4s ease;
+      }
+
+      .feature-card:hover {
+        background: rgba(255, 255, 255, 0.03);
+        border-color: rgba(0, 255, 170, 0.15);
+      }
+
+      .feature-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 1.8rem;
+        position: relative;
+      }
+
+      .feature-icon svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .feature-card h3 {
+        font-size: 1.05rem;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+        margin-bottom: 1rem;
+      }
+
+      .feature-card p {
+        font-size: 0.82rem;
+        line-height: 2;
+        color: rgba(232, 230, 225, 0.45);
+      }
+
+      .feature-line-sample {
+        display: flex;
+        gap: 6px;
+        margin-top: 1.4rem;
+      }
+
+      .feature-line-sample span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        border-radius: 1px;
+        opacity: 0.8;
+      }
+
+      /* ============================================
+         LINES VISUALIZATION STRIP
+         ============================================ */
+      .lines-strip {
+        padding: 4rem 0;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .lines-strip::before,
+      .lines-strip::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 15%;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      .lines-strip::before {
+        left: 0;
+        background: linear-gradient(to right, var(--bg), transparent);
+      }
+
+      .lines-strip::after {
+        right: 0;
+        background: linear-gradient(to left, var(--bg), transparent);
+      }
+
+      .lines-track {
+        display: flex;
+        gap: 0;
+        animation: scroll-lines 60s linear infinite;
+        width: max-content;
+      }
+
+      @keyframes scroll-lines {
+        to { transform: translateX(-50%); }
+      }
+
+      .line-segment {
+        height: 2px;
+        flex-shrink: 0;
+        opacity: 0.6;
+      }
+
+      /* ============================================
+         TECH
+         ============================================ */
+      .tech {
+        padding: 6rem 2rem 10rem;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .tech .section-label {
+        margin-bottom: 3rem;
+      }
+
+      .tech-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem 2rem;
+        list-style: none;
+      }
+
+      .tech-list li {
+        font-family: var(--mono);
+        font-size: 0.78rem;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        color: var(--dim);
+        padding: 0.5rem 1.2rem;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      /* ============================================
+         FOOTER
+         ============================================ */
+      .footer {
+        padding: 4rem 2rem;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.04);
+      }
+
+      .footer-title {
+        font-size: 1.6rem;
+        font-weight: 200;
+        letter-spacing: 0.2em;
+        margin-bottom: 0.6rem;
+        color: rgba(232, 230, 225, 0.3);
+      }
+
+      .footer-sub {
+        font-family: var(--mono);
+        font-size: 0.65rem;
+        letter-spacing: 0.3em;
+        color: var(--dim);
+        opacity: 0.5;
+      }
+
+      /* ============================================
+         RESPONSIVE
+         ============================================ */
+      @media (max-width: 640px) {
+        .concept {
+          padding: 6rem 1.5rem;
+        }
+
+        .concept::before {
+          display: none;
+        }
+
+        .features {
+          padding: 5rem 1rem 6rem;
+        }
+
+        .feature-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-cube {
+          width: 240px;
+          height: 240px;
+        }
+
+        .hero-cube .face {
+          width: 240px;
+          height: 240px;
+        }
+
+        .hero-cube .face:nth-child(1) { transform: translateZ(120px); }
+        .hero-cube .face:nth-child(2) { transform: rotateY(180deg) translateZ(120px); }
+        .hero-cube .face:nth-child(3) { transform: rotateY(90deg) translateZ(120px); }
+        .hero-cube .face:nth-child(4) { transform: rotateY(-90deg) translateZ(120px); }
+        .hero-cube .face:nth-child(5) { transform: rotateX(90deg) translateZ(120px); }
+        .hero-cube .face:nth-child(6) { transform: rotateX(-90deg) translateZ(120px); }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+      <div class="hero-cube">
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+        <div class="face"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">透景</h1>
+        <p class="hero-romanize">toukei</p>
+        <p class="hero-tagline">
+          都市の骨格を透かし見る。<br />
+          鉄道が描く、市民の生活の断面。
+        </p>
+        <div class="hero-cta">
+          <a href="./index.html">
+            Enter the viewer
+            <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <p class="hero-scroll">scroll</p>
+    </section>
+
+    <!-- ==================== CONCEPT ==================== -->
+    <section class="concept">
+      <p class="section-label">Concept</p>
+      <h2 class="concept-title">
+        鉄道は都市の<em>骨格</em>である。<br />
+        その透明な構造の中に、<br />
+        無数の生活が<em>脈打って</em>いる。
+      </h2>
+      <div class="concept-body">
+        <p>
+          東京23区を走る鉄道網は、都市のスケルトンそのものです。
+          地上も地下も、無数の路線が複雑に絡み合い、毎日数百万の人々を運んでいます。
+          しかし、その全容を一望することはできません。
+        </p>
+        <p>
+          透景は、この見えない構造体を3Dのワイヤーフレーム &mdash; 私たちが「おり」と呼ぶ透明な箱 &mdash;
+          の中に再構成します。
+          駅の位置は緯度・経度・標高から正確にマッピングされ、
+          各路線はその公式カラーで結ばれます。
+          そして時刻表データに基づき、列車が実際のダイヤ通りにリアルタイムで走行します。
+        </p>
+        <p>
+          箱庭に切り取られた都市の断面。
+          骨格だけが浮かび上がるとき、
+          そこに市民の生活のリズムが透けて見えます。
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== LINES STRIP ==================== -->
+    <section class="lines-strip" aria-hidden="true">
+      <div class="lines-track" id="lines-track"></div>
+    </section>
+
+    <!-- ==================== FEATURES ==================== -->
+    <section class="features">
+      <p class="section-label">Features</p>
+
+      <div class="feature-grid">
+        <!-- 3D Railway Map -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="0.8">
+              <rect x="6" y="6" width="28" height="28" rx="0" opacity="0.5" />
+              <rect x="10" y="10" width="20" height="20" rx="0" opacity="0.3" />
+              <line x1="6" y1="6" x2="10" y2="10" opacity="0.3" />
+              <line x1="34" y1="6" x2="30" y2="10" opacity="0.3" />
+              <line x1="6" y1="34" x2="10" y2="30" opacity="0.3" />
+              <line x1="34" y1="34" x2="30" y2="30" opacity="0.3" />
+              <circle cx="18" cy="20" r="1.5" fill="var(--line-metro)" stroke="none" />
+              <circle cx="24" cy="16" r="1.5" fill="var(--line-jr)" stroke="none" />
+              <circle cx="22" cy="24" r="1.5" fill="var(--line-toei)" stroke="none" />
+              <line x1="18" y1="20" x2="24" y2="16" stroke="var(--line-metro)" stroke-width="0.6" />
+              <line x1="24" y1="16" x2="22" y2="24" stroke="var(--line-jr)" stroke-width="0.6" />
+            </svg>
+          </div>
+          <h3>3D 路線マップ</h3>
+          <p>
+            東京23区の全鉄道路線を、緯度・経度・標高から3D空間に正確に配置。
+            地下鉄・JR・私鉄すべてが、ひとつの「おり」の中に共存します。
+          </p>
+          <div class="feature-line-sample">
+            <span style="background: var(--line-metro)"></span>
+            <span style="background: var(--line-toei)"></span>
+            <span style="background: var(--line-jr)"></span>
+            <span style="background: var(--line-private)"></span>
+          </div>
+        </div>
+
+        <!-- Real-time Train Simulation -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="0.8">
+              <path d="M8 32 L20 8 L32 32" opacity="0.4" />
+              <circle cx="14" cy="20" r="2" fill="var(--accent)" stroke="none" opacity="0.8" />
+              <line x1="14" y1="20" x2="20" y2="14" stroke="var(--accent)" stroke-width="0.5" stroke-dasharray="2 2" />
+              <circle cx="20" cy="14" r="1.5" fill="var(--accent)" stroke="none" opacity="0.4" />
+            </svg>
+          </div>
+          <h3>列車シミュレーション</h3>
+          <p>
+            実際の時刻表データに基づき、各路線の列車がリアルタイムで走行。
+            シミュレーション速度は1x〜10xで調整でき、ラッシュ時の密度も体感できます。
+          </p>
+        </div>
+
+        <!-- Face Tracking Camera -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="0.8">
+              <circle cx="20" cy="16" r="6" opacity="0.4" />
+              <path d="M10 34 C10 26 30 26 30 34" opacity="0.3" />
+              <circle cx="17" cy="15" r="1" fill="currentColor" opacity="0.6" />
+              <circle cx="23" cy="15" r="1" fill="currentColor" opacity="0.6" />
+              <path d="M6 8 L6 4 L10 4" opacity="0.5" />
+              <path d="M34 8 L34 4 L30 4" opacity="0.5" />
+              <path d="M6 28 L6 32 L10 32" opacity="0.5" />
+              <path d="M34 28 L34 32 L30 32" opacity="0.5" />
+            </svg>
+          </div>
+          <h3>フェイストラッキング</h3>
+          <p>
+            カメラで顔の動きを検知し、頭を傾けるとビューが追従。
+            マウスやタッチに触れずに、身体の動きで都市を覗き込む体験。
+          </p>
+        </div>
+
+        <!-- Multi-tab View -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="0.8">
+              <rect x="4" y="10" width="14" height="10" rx="1" opacity="0.3" />
+              <rect x="22" y="10" width="14" height="10" rx="1" opacity="0.3" />
+              <rect x="4" y="24" width="14" height="10" rx="1" opacity="0.3" />
+              <rect x="22" y="24" width="14" height="10" rx="1" opacity="0.3" />
+              <circle cx="11" cy="15" r="2" fill="var(--line-metro)" stroke="none" opacity="0.5" />
+              <circle cx="29" cy="15" r="2" fill="var(--line-jr)" stroke="none" opacity="0.5" />
+              <circle cx="11" cy="29" r="2" fill="var(--line-toei)" stroke="none" opacity="0.5" />
+              <circle cx="29" cy="29" r="2" fill="var(--line-private)" stroke="none" opacity="0.5" />
+            </svg>
+          </div>
+          <h3>マルチタブ同期</h3>
+          <p>
+            複数のブラウザタブを開くと、各タブが自動的に異なる路線カテゴリを表示。
+            地下鉄・JR・私鉄を同時に比較できます。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECH ==================== -->
+    <section class="tech">
+      <p class="section-label">Built with</p>
+      <ul class="tech-list">
+        <li>Three.js</li>
+        <li>MediaPipe Vision</li>
+        <li>TypeScript</li>
+        <li>Vite</li>
+        <li>GTFS Timetable Data</li>
+      </ul>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <p class="footer-title">透景</p>
+      <p class="footer-sub">toukei &mdash; seeing through the city</p>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script>
+      // Generate the scrolling railway lines strip
+      (() => {
+        const track = document.getElementById("lines-track");
+        const colors = [
+          "#ff9500", "#f62e36", "#009bbf", "#00bb85", "#8f76d6",
+          "#9acd32", "#f15a22", "#00b2e5", "#ffd400",
+          "#e85298", "#0079c2", "#6cbb5a", "#b6007a",
+          "#dd0077", "#ff0000", "#2b6db2", "#009cd2", "#e44d2a",
+          "#149dd1", "#c1a470", "#00ac9b", "#9c5e31",
+        ];
+
+        // Build two copies for seamless loop
+        for (let copy = 0; copy < 2; copy++) {
+          for (let i = 0; i < 80; i++) {
+            const seg = document.createElement("div");
+            seg.className = "line-segment";
+            seg.style.width = (30 + Math.random() * 100) + "px";
+            seg.style.background = colors[i % colors.length];
+            track.appendChild(seg);
+          }
+        }
+      })();
+
+      // Intersection Observer for fade-in
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      document.querySelectorAll(".feature-card, .concept-title, .concept-body").forEach((el) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(30px)";
+        el.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
