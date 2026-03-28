@@ -6,7 +6,10 @@ dist
 *.sw?
 
 # Tool / IDE config
+.claude/worktrees/
+.playwright/
 .playwright-mcp/
+.serena/
 
 # Superpowers plans
 docs/superpowers/
