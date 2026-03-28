@@ -22,6 +22,17 @@ const SPAN_NS = (BOUNDS.lat.max - BOUNDS.lat.min) * DEG_TO_M_LAT; // ~32.2km
 const SPAN_EW = (BOUNDS.lon.max - BOUNDS.lon.min) * DEG_TO_M_LON; // ~32.4km
 const MAX_HORIZONTAL = Math.max(SPAN_NS, SPAN_EW);
 
+/**
+ * Compute the Y range (local ori coordinates) that the internal elements
+ * (stations, lines, trains) actually occupy, based on elevation bounds.
+ * Used by main.ts to size the ori cube to fit its contents.
+ */
+export function computeOriYRange(): { yMin: number; yMax: number } {
+  const yMin = (BOUNDS.elev.min * VERTICAL_EXAGGERATION / MAX_HORIZONTAL) * 2;
+  const yMax = (BOUNDS.elev.max * VERTICAL_EXAGGERATION / MAX_HORIZONTAL) * 2;
+  return { yMin, yMax };
+}
+
 // Operator color mapping
 const OPERATOR_COLORS: Record<string, number> = {
   "JR-East": 0x21b24b,
