@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+#canvas {
+  display: block;
+}
+
+/* --- UI overlay --- */
+#ui {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+#ui button {
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+#ui button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+#ui button.active {
+  border-color: #00ffaa;
+  background: rgba(0, 255, 170, 0.15);
+}
+
+#ui button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+/* --- Camera preview (PiP) --- */
+#preview-container {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #000;
+  z-index: 10;
+  display: none;
+}
+
+#preview-container.visible {
+  display: block;
+}
+
+#face-video {
+  width: 100%;
+  display: block;
+  transform: scaleX(-1); /* mirror */
+}
