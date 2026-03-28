@@ -1,7 +1,9 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { FaceTracker } from "./faceTracker";
-import { loadStations } from "./stationRenderer";
+import { fetchStations, renderStations } from "./stationRenderer";
+import { TabSync } from "./tabSync";
+import { classifyLines, filterStations, getCategoriesForTab } from "./stationFilter";
 import { TrainRenderer } from "./trainRenderer";
 import { TimeController, type SpeedMultiplier } from "./timeController";
 import "./style.css";
@@ -67,17 +69,30 @@ const seaLevelLine = new THREE.Line(
 );
 ori.add(seaLevelLine);
 
-// --- Stations + Trains ---
+// --- Tab-aware station rendering ---
 const timeCtrl = new TimeController();
 const trainRenderer = new TrainRenderer();
 let dataLoaded = false;
 
-async function initData() {
-  const railLines = await loadStations(ori);
-  await trainRenderer.load(ori, railLines);
-  dataLoaded = true;
-}
-initData();
+(async () => {
+  const allStations = await fetchStations();
+  const lineClassification = classifyLines(allStations);
+
+  async function updateStations(tabCount: number, tabIndex: number): Promise<void> {
+    const categories = getCategoriesForTab(tabCount, tabIndex);
+    const stations =
+      categories === null
+        ? allStations
+        : filterStations(allStations, lineClassification, categories);
+    const railLines = renderStations(stations, ori);
+    await trainRenderer.load(ori, railLines);
+    dataLoaded = true;
+  }
+
+  new TabSync((tabCount, tabIndex) => {
+    updateStations(tabCount, tabIndex);
+  });
+})();
 
 // --- UI ---
 const startBtn = document.getElementById("btn-start") as HTMLButtonElement;
