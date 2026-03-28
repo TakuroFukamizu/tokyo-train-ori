@@ -5,10 +5,12 @@ Generate mock timetable JSON files for Tokyo railway lines.
 Reads the station centerpoints JSON, computes inter-station distances,
 and generates trains at realistic intervals with computed travel times.
 
-Output: 3 JSON files in public/data/
+Output: 5 JSON files in public/data/
   - tokyo_metro_timetable.json
   - toei_timetable.json
-  - jr_yamanote_timetable.json
+  - jr_timetable.json
+  - private_railway_timetable.json
+  - other_timetable.json
 """
 
 import json
@@ -49,9 +51,48 @@ LINE_GROUPS = {
         "Toei.Mita",
         "Toei.Shinjuku",
         "Toei.Oedo",
+        "Toei.Arakawa",
+        "Toei.NipporiToneri",
     ],
-    "jr_yamanote_timetable.json": [
+    "jr_timetable.json": [
         "JR-East.Yamanote",
+        "JR-East.ChuoRapid",
+        "JR-East.ChuoSobuLocal",
+        "JR-East.KeihinTohokuNegishi",
+        "JR-East.Keiyo",
+        "JR-East.SaikyoKawagoe",
+        "JR-East.ShonanShinjuku",
+        "JR-East.JobanRapid",
+        "JR-East.JobanLocal",
+        "JR-East.Tokaido",
+        "JR-East.Yokosuka",
+        "JR-East.SobuRapid",
+        "JR-East.Takasaki",
+        "JR-East.Utsunomiya",
+    ],
+    "private_railway_timetable.json": [
+        "Odakyu.Odawara",
+        "Keio.Keio",
+        "Keio.KeioNew",
+        "Keio.Inokashira",
+        "Seibu.Ikebukuro",
+        "Seibu.Shinjuku",
+        "Seibu.SeibuYurakucho",
+        "Seibu.Toshima",
+        "Tobu.TobuSkytree",
+        "Tobu.TobuSkytreeBranch",
+        "Tobu.Tojo",
+        "Tobu.Kameido",
+        "Tobu.Daishi",
+        "Keikyu.Main",
+        "Keikyu.Airport",
+        "Keisei.Main",
+        "Keisei.Oshiage",
+        "Keisei.Kanamachi",
+    ],
+    "other_timetable.json": [
+        "TWR.Rinkai",
+        "Yurikamome.Yurikamome",
     ],
 }
 
@@ -97,9 +138,10 @@ def get_headway(hour: int) -> int:
 def build_line_stations(stations_data, target_line_code):
     """
     Extract ordered station list for a given line_code.
-    Returns list of {short_code, station_name, lat, lon, elev}.
+    Returns (line_name, list of {short_code, station_name, lat, lon, elev}).
     """
     raw = []
+    line_name = None
     for st in stations_data:
         lat, lon = st["center_point"]["lat"], st["center_point"]["lon"]
         if not (BOUNDS_LAT[0] <= lat <= BOUNDS_LAT[1] and
@@ -111,6 +153,8 @@ def build_line_stations(stations_data, target_line_code):
                 continue
             if not route.get("short_code"):
                 continue
+            if line_name is None and route.get("line_name"):
+                line_name = route["line_name"]
             elev = st.get("station_elevation_m") or st.get("elevation_m") or 0
             raw.append({
                 "short_code": route["short_code"],
@@ -127,7 +171,7 @@ def build_line_stations(stations_data, target_line_code):
         if not deduped or deduped[-1]["short_code"] != s["short_code"]:
             deduped.append(s)
 
-    return deduped
+    return line_name or target_line_code, deduped
 
 
 def compute_travel_times(stations):
@@ -144,7 +188,7 @@ def compute_travel_times(stations):
     return times
 
 
-def generate_trains_for_direction(station_sequence, travel_times, direction_id):
+def generate_trains_for_direction(station_sequence, stations, travel_times, direction_id):
     """
     Generate trains for one direction of a line.
     Returns list of train dicts.
@@ -152,6 +196,7 @@ def generate_trains_for_direction(station_sequence, travel_times, direction_id):
     trains = []
     train_counter = 0
     total_travel = travel_times[-1]
+    terminal_name = stations[-1]["station_name"]
 
     # Generate departures from 05:00 to 01:00 next day
     current_sec = 5 * 3600  # 05:00
@@ -175,6 +220,7 @@ def generate_trains_for_direction(station_sequence, travel_times, direction_id):
         if stops[-1]["departure_sec"] < end_sec + total_travel:
             trains.append({
                 "train_id": train_id,
+                "terminal": terminal_name,
                 "stops": stops,
             })
 
@@ -185,7 +231,7 @@ def generate_trains_for_direction(station_sequence, travel_times, direction_id):
 
 def generate_line_timetable(stations_data, line_code):
     """Generate timetable for a single line (both directions)."""
-    stations = build_line_stations(stations_data, line_code)
+    line_name, stations = build_line_stations(stations_data, line_code)
     if len(stations) < 2:
         print(f"  WARNING: {line_code} has <2 stations, skipping")
         return None
@@ -193,43 +239,30 @@ def generate_line_timetable(stations_data, line_code):
     station_sequence = [s["short_code"] for s in stations]
     travel_times = compute_travel_times(stations)
 
-    is_loop = line_code in LOOP_LINES
-
     directions = []
 
     # Direction 0: ascending order (as sorted)
-    trains_0 = generate_trains_for_direction(station_sequence, travel_times, 0)
+    trains_0 = generate_trains_for_direction(station_sequence, stations, travel_times, 0)
     directions.append({
         "direction_id": 0,
         "station_sequence": station_sequence,
         "trains": trains_0,
     })
 
-    if is_loop:
-        # For loop lines, direction 1 is the same sequence in reverse
-        rev_sequence = list(reversed(station_sequence))
-        rev_stations = list(reversed(stations))
-        rev_travel_times = compute_travel_times(rev_stations)
-        trains_1 = generate_trains_for_direction(rev_sequence, rev_travel_times, 1)
-        directions.append({
-            "direction_id": 1,
-            "station_sequence": rev_sequence,
-            "trains": trains_1,
-        })
-    else:
-        # For non-loop lines, direction 1 is reversed
-        rev_sequence = list(reversed(station_sequence))
-        rev_stations = list(reversed(stations))
-        rev_travel_times = compute_travel_times(rev_stations)
-        trains_1 = generate_trains_for_direction(rev_sequence, rev_travel_times, 1)
-        directions.append({
-            "direction_id": 1,
-            "station_sequence": rev_sequence,
-            "trains": trains_1,
-        })
+    # Direction 1: reversed
+    rev_sequence = list(reversed(station_sequence))
+    rev_stations = list(reversed(stations))
+    rev_travel_times = compute_travel_times(rev_stations)
+    trains_1 = generate_trains_for_direction(rev_sequence, rev_stations, rev_travel_times, 1)
+    directions.append({
+        "direction_id": 1,
+        "station_sequence": rev_sequence,
+        "trains": trains_1,
+    })
 
     return {
         "line_code": line_code,
+        "line_name": line_name,
         "directions": directions,
     }
 

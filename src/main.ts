@@ -100,6 +100,7 @@ const tabLabels: Record<string, string> = {
     const categoryKey = categories === null ? "all" : [...categories].sort().join(",");
     const label = tabLabels[categoryKey] ?? categoryKey;
     tabInfoEl.textContent = `Tab ${tabIndex + 1}/${tabCount} — ${label}`;
+    document.title = tabCount <= 1 ? "Ori Viewer" : `Ori Viewer — ${label}`;
   }
 
   new TabSync((tabCount, tabIndex) => {
@@ -203,6 +204,44 @@ const trainCountEl = document.getElementById("train-count") as HTMLSpanElement;
 
 speedSelect.addEventListener("change", () => {
   timeCtrl.setSpeed(Number(speedSelect.value) as SpeedMultiplier);
+});
+
+// --- Train click tooltip ---
+const tooltipEl = document.getElementById("train-tooltip") as HTMLDivElement;
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+
+canvas.addEventListener("click", (event) => {
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+  raycaster.setFromCamera(mouse, camera);
+  const meshes = trainRenderer.getVisibleMeshes();
+  if (meshes.length === 0) return;
+
+  const intersects = raycaster.intersectObjects(meshes);
+  if (intersects.length > 0) {
+    const info = trainRenderer.getTrainInfoByMesh(intersects[0].object);
+    if (info) {
+      tooltipEl.innerHTML =
+        `<span class="line-name">${info.lineName}</span><br>` +
+        `<span class="terminal">${info.terminal} 方面</span><br>` +
+        `<span class="train-id">${info.trainId}</span>`;
+      tooltipEl.style.left = `${event.clientX + 12}px`;
+      tooltipEl.style.top = `${event.clientY - 10}px`;
+      tooltipEl.classList.add("visible");
+
+      // Auto-hide after 3 seconds
+      setTimeout(() => tooltipEl.classList.remove("visible"), 3000);
+    }
+  } else {
+    tooltipEl.classList.remove("visible");
+  }
+});
+
+// Hide tooltip on camera move
+canvas.addEventListener("mousedown", () => {
+  tooltipEl.classList.remove("visible");
 });
 
 // --- Resize ---
