@@ -4,6 +4,7 @@ import { FaceTracker } from "./faceTracker";
 import { loadStations } from "./stationRenderer";
 import { TrainRenderer } from "./trainRenderer";
 import { TimeController, type SpeedMultiplier } from "./timeController";
+import { WindowShakeDetector } from "./windowShakeDetector";
 import "./style.css";
 
 // --- Sensitivity / smoothing (tweak these) ---
@@ -220,5 +221,12 @@ function animate() {
 
   renderer.render(scene, camera);
 }
+
+// --- Window Shake Detection ---
+const shakeDetector = new WindowShakeDetector();
+shakeDetector.start();
+window.addEventListener("windowshake", (e) => {
+  console.log("🫨 Window shake detected!", e.detail);
+});
 
 animate();
