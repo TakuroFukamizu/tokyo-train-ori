@@ -150,8 +150,8 @@ export class FaceTracker {
         this.onPose({
           pitch: pitch - this.neutralPitch,
           yaw: -(yaw - this.neutralYaw),
-          x: -(tx - this.neutralX),
-          y: ty - this.neutralY,
+          x: tx - this.neutralX,
+          y: -(ty - this.neutralY),
         });
       }
     }
