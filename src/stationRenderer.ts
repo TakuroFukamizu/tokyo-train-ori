@@ -92,6 +92,57 @@ const LINE_COLORS: Record<string, number> = {
   "Keisei.Oshiage": 0x1a3b8a,
 };
 
+// Line name mapping (Japanese display names)
+export const LINE_NAMES: Record<string, string> = {
+  "TokyoMetro.Ginza": "銀座線",
+  "TokyoMetro.Marunouchi": "丸ノ内線",
+  "TokyoMetro.MarunouchiBranch": "丸ノ内線支線",
+  "TokyoMetro.Hibiya": "日比谷線",
+  "TokyoMetro.Tozai": "東西線",
+  "TokyoMetro.Chiyoda": "千代田線",
+  "TokyoMetro.Yurakucho": "有楽町線",
+  "TokyoMetro.Hanzomon": "半蔵門線",
+  "TokyoMetro.Namboku": "南北線",
+  "TokyoMetro.Fukutoshin": "副都心線",
+  "Toei.Asakusa": "都営浅草線",
+  "Toei.Mita": "都営三田線",
+  "Toei.Shinjuku": "都営新宿線",
+  "Toei.Oedo": "都営大江戸線",
+  "Toei.Arakawa": "都電荒川線",
+  "Toei.NipporiToneri": "日暮里・舎人ライナー",
+  "JR-East.Yamanote": "山手線",
+  "JR-East.ChuoRapid": "中央快速線",
+  "JR-East.ChuoSobuLocal": "中央・総武各停",
+  "JR-East.KeihinTohokuNegishi": "京浜東北・根岸線",
+  "JR-East.Keiyo": "京葉線",
+  "JR-East.SaikyoKawagoe": "埼京・川越線",
+  "JR-East.ShonanShinjuku": "湘南新宿ライン",
+  "JR-East.JobanRapid": "常磐快速線",
+  "JR-East.JobanLocal": "常磐各停",
+  "JR-East.Tokaido": "東海道線",
+  "JR-East.Yokosuka": "横須賀線",
+  "JR-East.SobuRapid": "総武快速線",
+  "JR-East.Nambu": "南武線",
+  "JR-East.Musashino": "武蔵野線",
+  "Odakyu.Odawara": "小田急小田原線",
+  "Keio.Keio": "京王線",
+  "Keio.Inokashira": "京王井の頭線",
+  "Tokyu.Toyoko": "東急東横線",
+  "Tokyu.DenEnToshi": "東急田園都市線",
+  "Seibu.Ikebukuro": "西武池袋線",
+  "Seibu.Shinjuku": "西武新宿線",
+  "Tobu.TobuSkytree": "東武スカイツリーライン",
+  "Tobu.Tojo": "東武東上線",
+  "TWR.Rinkai": "りんかい線",
+  "Yurikamome.Yurikamome": "ゆりかもめ",
+  "Keikyu.Main": "京急本線",
+  "Keikyu.Airport": "京急空港線",
+  "Keisei.Main": "京成本線",
+  "Keisei.Oshiage": "京成押上線",
+};
+
+export { LINE_COLORS };
+
 // Lines that form a loop (last station connects back to first)
 const LOOP_LINES = new Set([
   "JR-East.Yamanote",
